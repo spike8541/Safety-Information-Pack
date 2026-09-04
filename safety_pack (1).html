@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Eat Courier Safety Information Pack</title>
+    <style>
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5; color: #333; line-height: 1.6; }
+.header { background: linear-gradient(135deg, #FF8000 0%, #E55A00 100%); padding: 30px 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.15); position: sticky; top: 0; z-index: 100; }
+.header-logo { height: 50px; max-width: 200px; margin-bottom: 8px; object-fit: contain; }
+.header-title { color: white; font-size: 24px; font-weight: bold; margin: 0; }
+.container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+.card { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 20px; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.section-badge { width: 40px; height: 40px; background: linear-gradient(135deg, #FF8000 0%, #E55A00 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; font-weight: bold; margin-bottom: 15px; }
+.section-badge.shared { background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%); font-size: 14px; }
+.section-title { color: #FF8000; font-size: 24px; font-weight: bold; margin-bottom: 20px; border-bottom: 2px solid #FF8000; padding-bottom: 10px; }
+h2 { color: #FF8000; font-size: 20px; margin: 25px 0 15px; }
+p { margin-bottom: 15px; }
+ul, ol { margin: 15px 0 15px 30px; }
+li { margin-bottom: 8px; }
+table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+th { background: linear-gradient(135deg, #FF8000 0%, #E55A00 100%); color: white; padding: 12px; text-align: left; font-weight: bold; font-size: 14px; }
+td { padding: 10px 12px; border-bottom: 1px solid #eee; font-size: 14px; }
+tr:nth-child(even) td { background: #fafafa; }
+.safety-tip { background: #e8f5e8; border-left: 5px solid #4CAF50; padding: 15px 20px; margin: 20px 0; border-radius: 8px; }
+.safety-tip-title { color: #4CAF50; font-weight: bold; margin-bottom: 8px; }
+.warning-box { background: #fff3e0; border-left: 5px solid #FF8000; padding: 15px 20px; margin: 20px 0; border-radius: 8px; }
+.warning-title { color: #E55A00; font-weight: bold; margin-bottom: 8px; }
+.warning-box p, .safety-tip p { margin-bottom: 10px; }
+.warning-box p:last-child, .safety-tip p:last-child { margin-bottom: 0; }
+.warning-box ul, .safety-tip ul, .warning-box ol, .safety-tip ol { margin: 10px 0 10px 30px; }
+.footer { background: linear-gradient(135deg, #FF8000 0%, #E55A00 100%); padding: 30px 20px; text-align: center; color: white; font-size: 16px; margin-top: 20px; }
+.footer strong { font-size: 18px; }
+@media (max-width: 600px) {
+    .header { padding: 20px 15px; }
+    .header-logo { height: 38px; max-width: 160px; }
+    .header-title { font-size: 20px; }
+    .container { padding: 20px 15px; }
+    .card { padding: 20px; border-radius: 8px; }
+    .section-title { font-size: 20px; }
+    h2 { font-size: 18px; }
+    ul, ol { margin-left: 20px; }
+    th, td { font-size: 13px; padding: 8px; }
+}
+.page { display: none; animation: fadeIn 0.5s ease-in; }
+.page.active { display: block; }
+.progress-bar { background: rgba(255,255,255,0.9); height: 8px; margin: 15px auto 0; border-radius: 4px; max-width: 600px; overflow: hidden; }
+.progress-fill { background: linear-gradient(90deg, #FF8000, #E55A00); height: 100%; border-radius: 4px; transition: width 0.3s ease; }
+.progress-text { color: white; margin-top: 8px; font-size: 14px; }
+.navigation { display: flex; justify-content: space-between; align-items: center; margin-top: 40px; padding-top: 30px; border-top: 2px solid #eee; }
+.nav-button { background: linear-gradient(135deg, #FF8000 0%, #E55A00 100%); color: white; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.nav-button:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.nav-button:disabled { background: #ccc; cursor: not-allowed; transform: none; box-shadow: none; }
+.start-button { background: linear-gradient(135deg, #FF8000 0%, #E55A00 100%); color: white; border: none; padding: 18px 40px; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 30px auto; display: block; }
+.start-button:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.title-page { text-align: center; }
+.section-overview { text-align: left; margin: 30px auto; max-width: 500px; background: #FFF3E0; padding: 20px; border-radius: 8px; }
+.vehicle-selector-page { text-align: center; }
+.vehicle-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0; }
+.vehicle-option { background: white; border: 2px solid #FF8000; border-radius: 12px; padding: 30px 20px; cursor: pointer; transition: all 0.3s ease; text-align: center; }
+.vehicle-option:hover { background: #FFF3E0; transform: translateY(-5px); box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
+.vehicle-icon { font-size: 48px; margin-bottom: 15px; }
+.vehicle-name { font-size: 18px; font-weight: bold; color: #333; }
+.vehicle-desc { font-size: 14px; color: #666; margin-top: 8px; }
+.completion-message { display: none; flex-direction: column; align-items: center; justify-content: center; padding: 60px 20px; }
+.completion-card { background: white; border-radius: 12px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); text-align: center; max-width: 500px; }
+.completion-card h2 { color: #4CAF50; font-size: 28px; margin-bottom: 15px; border: none; }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="header-logo" src="data:image/png;base64,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" alt="Just Eat" />
+        <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width: 50%;"></div></div>
+        <div class="progress-text" id="progressText">Page 1 of 2</div>
+    </div>
+    <div class="container">
+
+        <div class="page active" id="page0">
+            <div class="card title-page">
+                <h1 style="color: #FF8000; font-size: 28px; margin-bottom: 15px;">Courier Safety Information Pack</h1>
+                <p style="font-size: 18px; color: #666; margin-bottom: 20px;">Your guide to staying safe on Belgium's roads</p>
+                <div class="section-overview">
+                    <p style="font-weight: bold; color: #E55A00; margin-bottom: 10px;">What's inside:</p>
+                    <p style="font-size: 14px; margin-bottom: 5px;">&#128663; Vehicle setup and legal requirements</p>
+                    <p style="font-size: 14px; margin-bottom: 5px;">&#9888; Road safety and hazard awareness</p>
+                    <p style="font-size: 14px; margin-bottom: 5px;">&#127811; Protective gear and delivery equipment</p>
+                    <p style="font-size: 14px; margin-bottom: 5px;">&#127782; Weather and fatigue guidance</p>
+                    <p style="font-size: 14px; margin-bottom: 5px;">&#128181; Manual handling and hazard awareness</p>
+                </div>
+                <button class="start-button" onclick="changePage(1)">Start &rarr;</button>
+            </div>
+        </div>
+        <div class="page" id="page1">
+            <div class="card vehicle-selector-page">
+                <div class="section-title">Select Your Vehicle</div>
+                <p style="font-size: 16px; color: #666; margin-bottom: 10px;">Choose your vehicle type to see relevant safety information.</p>
+                <div class="vehicle-options">
+                    <div class="vehicle-option" onclick="selectVehicle('car')">
+                        <div class="vehicle-icon">&#128663;</div>
+                        <div class="vehicle-name">Car</div>
+                        <div class="vehicle-desc">Delivery by car</div>
+                    </div>
+                    <div class="vehicle-option" onclick="selectVehicle('motorcycle')">
+                        <div class="vehicle-icon">&#127949;</div>
+                        <div class="vehicle-name">Motorcycle / Moped</div>
+                        <div class="vehicle-desc">Two-wheeled motor vehicles</div>
+                    </div>
+                    <div class="vehicle-option" onclick="selectVehicle('bike')">
+                        <div class="vehicle-icon">&#128692;</div>
+                        <div class="vehicle-name">E-Bike</div>
+                        <div class="vehicle-desc">Electric bicycle</div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Back</button>
+                    <button class="nav-button" disabled style="opacity: 0.5;">Select a vehicle &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-car-1" data-vehicle="car">
+            <div class="card">
+                <div class="section-badge">1</div>
+                <div class="section-title">Setting Up Your Vehicle for a Safer Delivery</div>
+                <h2>Pre-Drive Checks</h2>
+<p>Every safe delivery starts before you turn the ignition. Take a few minutes to check your vehicle before each run.</p>
+<p><strong>Tyres:</strong> Check pressure with a gauge — match the manufacturer's recommendation (usually on a sticker inside the driver's door). Legal minimum tread depth in Belgium is 1.6mm. Inspect for cuts, bulges, or embedded objects.</p>
+<p><strong>Lights:</strong> Verify headlights (dipped and full beam), tail lights, brake lights, indicators, fog lights, and reverse lights. A broken light means an on-the-spot fine in Belgium.</p>
+<p><strong>Fluids:</strong> Check engine oil (dipstick between min/max), coolant (when engine is cold), brake fluid, and windscreen washer fluid.</p>
+<p><strong>Brakes:</strong> Test gently when starting to move. They should feel firm, not spongy. Grinding, squealing, or pulling to one side needs immediate attention.</p>
+<p><strong>Mirrors & Windscreen:</strong> Clean, properly adjusted, and free from cracks. A cracked windscreen can fail inspection.</p>
+<p><strong>Warning Lights:</strong> Engine, brake, or oil pressure lights — don't ignore them. Get checked before driving.</p>
+<h2>Belgium's Vehicle Inspection Requirements</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>As of September 2026, rules vary by region:</p>
+<ul>
+<li><strong>Flanders:</strong> Inspection every 2 years, regardless of age or mileage.</li>
+<li><strong>Wallonia & Brussels:</strong> Two-year cycles generally limited to cars under 8 years old with less than 110,000 km.</li>
+</ul>
+<p>If your vehicle fails, you have 2 months (Flanders) to fix and re-inspect. Keep your inspection certificate in the car.</p>
+</div>
+<h2>Insurance & Documentation</h2>
+<p>Carry your insurance Green Card and a standard accident report form (constat amiable) at all times. In Belgium, the vehicle is insured, not the driver. Driving without valid insurance is illegal.</p>
+<h2>Support When You Need It</h2>
+<p>Mechanical issues? Use the live chat in the app. Takeaway.com provides Personal Accident Insurance. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-car-2" data-vehicle="car">
+            <div class="card">
+                <div class="section-badge">2</div>
+                <div class="section-title">Understanding Belgium's Road Rules</div>
+                <h2>Speed Limits</h2>
+<table>
+<thead><tr>
+<th>Road Type</th>
+<th>Limit</th>
+</tr></thead><tbody>
+<tr>
+<td>Motorways</td>
+<td>120 km/h nationwide</td>
+</tr>
+<tr>
+<td>Built-up areas</td>
+<td>50 km/h default; Brussels enforces 30 km/h citywide</td>
+</tr>
+<tr>
+<td>Rural roads</td>
+<td>Flanders: 70 km/h; Wallonia: 90 km/h</td>
+</tr>
+<tr>
+<td>Residential zones (woonerf)</td>
+<td>20 km/h</td>
+</tr>
+<tr>
+<td>School/urban Zone 30</td>
+<td>30 km/h</td>
+</tr>
+</tbody>
+</table>
+<p>Speed cameras are common. Don't rely on GPS speed limits — watch for signs.</p>
+<h2>Parking: Colour-Coded Zones</h2>
+<div class="safety-tip"><div class="safety-tip-title">&#10004; Safety Tip</div>
+<p>Brussels parking zones:</p>
+<ul>
+<li><strong>Blue Zone:</strong> Free with blue parking disc, 1–2 hour limit</li>
+<li><strong>Green Zone:</strong> Paid visitor zone, no time limit</li>
+<li><strong>Red/Orange Zone:</strong> Paid, max 2 hours — ideal for quick deliveries</li>
+<li><strong>Grey Zone:</strong> Paid, max 4.5 hours</li>
+</ul>
+<p>As of September 2026: <strong>perpendicular parking only where explicitly signed</strong>. Otherwise, park parallel to the curb.</p>
+</div>
+<h2>Low Emission Zones (LEZs)</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>Brussels, Antwerp, and Ghent enforce LEZs restricting older diesel and petrol vehicles. Compliance is monitored by automatic number plate recognition. Check your vehicle before entering — fines apply even if you didn't know about restrictions.</p>
+</div>
+<h2>Category B License for Electric Vans</h2>
+<p>Drivers with a Category B (car) license can operate zero-emission vans up to 4.25 tonnes MAM (vs the traditional 3.5-tonne limit). Full effect from November 2027; interim measures already in place.</p>
+<h2>Right-of-Way & Intersections</h2>
+<ul>
+<li>At unmarked intersections, traffic from the right has priority</li>
+<li>On roundabouts, yield to traffic already circulating</li>
+<li>When turning, yield to pedestrians and cyclists continuing straight</li>
+<li>From September 2026, some intersections feature "square green" signals allowing cyclists and pedestrians to cross simultaneously</li>
+</ul>
+<h2>Common Urban Hazards</h2>
+<ul>
+<li><strong>Tram tracks:</strong> Trams always have priority; tracks are slippery and can catch tyres at shallow angles</li>
+<li><strong>Cobblestones:</strong> Bumpy and slippery when wet — slow down</li>
+<li><strong>Cyclists & pedestrians:</strong> Check blind spots before turning or opening doors</li>
+<li><strong>Narrow streets:</strong> Historic centres have tight lanes and limited visibility — drive slowly</li>
+</ul>
+<h2>Support When You Need It</h2>
+<p>Questions about road rules? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-car-3" data-vehicle="car">
+            <div class="card">
+                <div class="section-badge">3</div>
+                <div class="section-title">Safe Use of Delivery Equipment</div>
+                <h2>Thermal Bags Placement</h2>
+<p>Never put thermal bags on the passenger seat — they can slide forward and interfere with controls during sudden braking. Place them on the floor behind the front seats or in the boot, secured so they don't shift.</p>
+<h2>Loading Your Thermal Bag</h2>
+<p>Place heavy items at the bottom, lightest on top. This creates a stable centre of gravity. Separate hot food from cold items where possible.</p>
+<h2>Phone Use While Driving</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>Using a handheld phone while driving is illegal in Belgium and carries an on-the-spot fine. Use a fixed dashboard or windscreen holder. Never hold your phone, type messages, or browse the app while the car is moving. Pull over to a safe, legal place before using your phone.</p>
+</div>
+<h2>Support When You Need It</h2>
+<p>Equipment questions? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-car-4" data-vehicle="car">
+            <div class="card">
+                <div class="section-badge">4</div>
+                <div class="section-title">Combatting Fatigue for Car Drivers</div>
+                <h2>Why Fatigue Matters</h2>
+<p>Fatigue contributes to 20–30% of road accidents in Belgium, with higher rates on motorways. Going without proper sleep affects your brain similarly to being drunk — slower reactions, cloudy judgment, reduced hazard awareness.</p>
+<h2>What Causes Fatigue</h2>
+<ul>
+<li><strong>Not enough quality sleep</strong> — your body needs proper recovery</li>
+<li><strong>Time of day</strong> — late-night, early-morning, and mid-afternoon runs are hardest</li>
+<li><strong>Long, monotonous driving</strong> — back-to-back deliveries on motorways drain you fast</li>
+</ul>
+<h2>Warning Signs</h2>
+<ul>
+<li>Constant yawning</li>
+<li>Struggling to focus</li>
+<li>Sore, heavy eyes or blurred vision</li>
+<li>Slow reactions to brake lights or signals</li>
+<li>Zoning out — can't remember the last few kilometres</li>
+<li>Drifting out of your lane</li>
+<li>Micro-sleeps — eyes closing for 1–2 seconds</li>
+<li>Missing your exit</li>
+</ul>
+<p>If any of these happen, pull over immediately.</p>
+<h2>Prevention</h2>
+<div class="safety-tip"><div class="safety-tip-title">&#10004; Safety Tip</div>
+<ul>
+<li>Get 7–8 hours of sleep before your run</li>
+<li>Be extra cautious during high-risk hours (late night, early morning)</li>
+<li>Take a 15-minute break every 2 hours — a 15–20 minute nap restores alertness better than caffeine</li>
+<li>Eat balanced meals, not heavy greasy ones</li>
+<li>Check medications for drowsiness side effects</li>
+<li>Plan routes with rest stops on long stretches</li>
+<li>Stay hydrated — dehydration accelerates fatigue</li>
+</ul>
+</div>
+<h2>Support When You Need It</h2>
+<p>Struggling with fatigue? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-motorcycle-1" data-vehicle="motorcycle">
+            <div class="card">
+                <div class="section-badge">1</div>
+                <div class="section-title">Setting Up Your Motorcycle/Moped</div>
+                <h2>Pre-Ride Checks</h2>
+<p>Every safe delivery starts before you turn the ignition. Check your bike before each run.</p>
+<p><strong>Tyres:</strong> Check pressure against manufacturer's recommendation. Under-inflated tyres reduce grip, especially in wet conditions. Legal minimum tread: 1.6mm. Inspect for cuts, cracks, or wear.</p>
+<p><strong>Brakes:</strong> Squeeze the front brake lever and push forward — the front wheel should lock. Repeat for rear brake. Check brake fluid on hydraulic systems. Worn pads or spongy levers need immediate attention.</p>
+<p><strong>Lights:</strong> Headlight, tail light, brake light, and indicators. Lights are mandatory at night and in poor visibility. Test your horn.</p>
+<p><strong>Chain:</strong> Should have 20–30mm of slack in the middle. Too tight or too loose can snap or damage the gearbox. Keep lubricated, especially after wet weather.</p>
+<p><strong>Oil:</strong> Check via sight glass or dipstick. Low oil can damage your engine mid-delivery.</p>
+<p><strong>Mirrors:</strong> Clean and properly adjusted. Ensure chassis number and license plate are visible. Check fuel level.</p>
+<h2>Inspection Requirements</h2>
+<p>Motorcycles over 125cc must undergo technical inspection before second-hand sale or after an accident. Mopeds and bikes under 125cc are currently exempt from periodic inspections, but maintenance remains your responsibility.</p>
+<h2>Support When You Need It</h2>
+<p>Mechanical issues? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-motorcycle-2" data-vehicle="motorcycle">
+            <div class="card">
+                <div class="section-badge">2</div>
+                <div class="section-title">Choosing the Right Motorcycle/Moped</div>
+                <h2>Licensing Categories</h2>
+<table>
+<thead><tr>
+<th>Category</th>
+<th>Engine/Power</th>
+<th>Min. Age</th>
+<th>Requirements</th>
+</tr></thead><tbody>
+<tr>
+<td>AM</td>
+<td>50cc / 4kW electric, max 45 km/h</td>
+<td>16</td>
+<td>Theory test + 4h practical training + practical test</td>
+</tr>
+<tr>
+<td>A1</td>
+<td>Up to 125cc, max 11 kW</td>
+<td>18</td>
+<td>Theory + practical (or 4h training if B license post-May 2011)</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>Up to 35 kW</td>
+<td>20</td>
+<td>Theory + practical test</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Unrestricted</td>
+<td>24 (22 with 2yr A2)</td>
+<td>Theory + practical test</td>
+</tr>
+</tbody>
+</table>
+<h2>Registration & Insurance</h2>
+<p>All motorcycles and mopeds must be registered and insured. Your insurer handles registration formalities for new vehicles. Riding without insurance is illegal and voids coverage.</p>
+<h2>Don't Modify Your Bike</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>Unlocking speed limiters, changing exhausts without approval, or altering engine specs makes your bike illegal, voids insurance, and increases danger. Always keep your bike in original manufacturer settings.</p>
+</div>
+<h2>Support When You Need It</h2>
+<p>Licensing or compliance questions? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-motorcycle-3" data-vehicle="motorcycle">
+            <div class="card">
+                <div class="section-badge">3</div>
+                <div class="section-title">Battery & Electrical Safety</div>
+                <h2>Warning Signs of Battery Damage</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>Stop using or charging immediately if you notice:</p>
+<ul>
+<li>Battery has swelled or changed shape</li>
+<li>Leaks or unusual moisture</li>
+<li>Excessively hot during charging or use</li>
+<li>Visible scratches, dents, or cracks</li>
+<li>Discolouration or colour change</li>
+<li>Strong chemical or burning odour</li>
+</ul>
+<p>A damaged lithium-ion battery can undergo "thermal runaway" — rapid overheating and fire that is extremely difficult to extinguish.</p>
+</div>
+<h2>Charging Safely</h2>
+<div class="safety-tip"><div class="safety-tip-title">&#10004; Safety Tip</div>
+<ul>
+<li>Use only the manufacturer's charger — a different charger can cause overheating</li>
+<li>Charge in a ventilated area, away from flammable materials</li>
+<li>Don't charge overnight or when you're not home</li>
+<li>Check cables and connections for damage regularly</li>
+<li>Keep a working smoke alarm nearby</li>
+</ul>
+</div>
+<h2>Storing Spare Batteries</h2>
+<p>Store in a cool, dry place away from sunlight and heat. Fire-resistant battery storage bags provide extra protection.</p>
+<h2>What to Do in a Battery Fire</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>Evacuate immediately and call <strong>112</strong>. Do not attempt to extinguish a large lithium-ion fire yourself. For a very small, just-starting fire, use a CO2 extinguisher — never use water on an active electrical fire unless the power source is disconnected.</p>
+</div>
+<h2>Disposing of Damaged Batteries</h2>
+<p>Never throw lithium-ion batteries in household waste. In Belgium, dispose via <strong>Bebat</strong> collection points (check their website for locations). Let staff know if the battery is damaged or swollen.</p>
+<h2>Support When You Need It</h2>
+<p>Battery safety questions? Use live chat in the app. In a fire emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-motorcycle-4" data-vehicle="motorcycle">
+            <div class="card">
+                <div class="section-badge">4</div>
+                <div class="section-title">Protect Yourself While You Ride</div>
+                <h2>Helmets — Your Most Important Protection</h2>
+<p>Every rider and passenger must wear a certified helmet with an ECE approval mark (ECE 22.05 or newer ECE 22.06). The helmet should fit snugly; chin strap fastened every ride. Replace every 3–5 years or immediately after any impact.</p>
+<h2>Mandatory Protective Clothing (Motorcycles over 50cc)</h2>
+<p>Belgian law requires:</p>
+<ul>
+<li><strong>Gloves</strong> — full coverage, no fingerless</li>
+<li><strong>Long-sleeved jacket</strong> — appropriate motorcycle material</li>
+<li><strong>Long trousers or overall</strong> — full leg coverage</li>
+<li><strong>Boots or ankle-boots</strong> — ankle protection</li>
+</ul>
+<p>For mopeds (50cc and under), only a helmet is legally required, but gloves, jacket, trousers, and boots are strongly recommended.</p>
+<h2>High-Visibility Clothing</h2>
+<p>A high-vis vest meeting EN ISO 20471 standards should be worn over your jacket, especially in low light or poor weather.</p>
+<h2>Eye Protection & Seasonal Layers</h2>
+<p>Wear shatterproof eye protection or a helmet with visor. In winter: thermal base layers, windproof mid-layer, waterproof outer jacket. In summer: breathable, vented motorcycle gear.</p>
+<h2>Support When You Need It</h2>
+<p>Safety gear questions? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-motorcycle-5" data-vehicle="motorcycle">
+            <div class="card">
+                <div class="section-badge">5</div>
+                <div class="section-title">Safe Use of Delivery Equipment</div>
+                <h2>Thermal Bag Positioning</h2>
+<p>If using as a backpack: tighten straps firmly so there's no gap between bag and back. A loose bag shifts when you turn, lean, or brake — throwing off balance and risking loss of control.</p>
+<p>If mounted on the bike: double-check it's securely fastened and doesn't move when tested. A dislodged bag mid-ride is a serious hazard.</p>
+<h2>Loading Your Thermal Bag</h2>
+<p>Heavy items at the bottom, lightest on top. This creates a stable centre of gravity and prevents the load from shifting unpredictably. Separate hot food from cold items.</p>
+<h2>Phone Use While Riding</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>Never use your phone while riding. Use a fixed cradle for GPS only. Always pull over to a safe place and stop before using your phone or the Courier App. A split second of distraction can cause a serious accident.</p>
+</div>
+<h2>Support When You Need It</h2>
+<p>Equipment questions? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-motorcycle-6" data-vehicle="motorcycle">
+            <div class="card">
+                <div class="section-badge">6</div>
+                <div class="section-title">Motorcycle/Moped Road Safety</div>
+                <h2>Lane Filtering Rules</h2>
+<p>Filtering between slow-moving or stopped traffic is legal in Belgium under strict conditions:</p>
+<ul>
+<li>Maximum filtering speed: 50 km/h</li>
+<li>Speed difference vs surrounding traffic: max 20 km/h</li>
+<li>On multi-lane roads: filter between the two leftmost lanes</li>
+<li>Return to your lane when traffic exceeds 50 km/h</li>
+<li>Emergency lane use allowed, but clear immediately for priority vehicles</li>
+<li>Filtering prohibited near pedestrian/cyclist crossings</li>
+<li>You may activate all indicators simultaneously for visibility</li>
+</ul>
+<h2>Road Positioning & Overtaking</h2>
+<p>Position yourself about two-thirds into the lane for maximum visibility and safety. Overtake on the left, signal clearly. Never overtake on solid white lines. Give cyclists at least 1m clearance in built-up areas, 1.5m outside.</p>
+<h2>Right-of-Way</h2>
+<p>At unmarked intersections, traffic from the right has priority. On roundabouts, yield to traffic already circulating. When turning, yield to cyclists and pedestrians continuing straight.</p>
+<h2>Common Road Hazards</h2>
+<ul>
+<li><strong>Tram tracks:</strong> Extremely slippery when wet; cross at close to 90 degrees; trams always have priority</li>
+<li><strong>Cobblestones:</strong> Dangerously slippery when wet; reduce speed, keep balanced, ride the middle line</li>
+<li><strong>Painted markings & manhole covers:</strong> Slick in wet conditions — avoid braking or leaning on them</li>
+<li><strong>Door zones:</strong> Maintain 1–1.5m from parked cars</li>
+<li><strong>Intersections:</strong> Approach cautiously, make eye contact, use clear signals</li>
+<li><strong>Weather:</strong> Wet leaves, ice, and snow drastically reduce traction</li>
+</ul>
+<h2>Support When You Need It</h2>
+<p>Road safety questions? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-motorcycle-7" data-vehicle="motorcycle">
+            <div class="card">
+                <div class="section-badge">7</div>
+                <div class="section-title">Adverse Weather Riding</div>
+                <h2>Expect Rain</h2>
+<p>Belgium averages 12–15 rainy days per month, year-round. The trick isn't avoiding rain — it's learning to ride safely in it.</p>
+<h2>Visibility First</h2>
+<p>Use headlight and tail light even during the day in grey or wet conditions. Keep your visor clean; use anti-fog treatment or pin-lock insert. Wear bright, reflective clothing or high-vis vest.</p>
+<h2>Adjust How You Ride</h2>
+<ul>
+<li><strong>Slow down</strong> — especially when cornering; dry-weather lean angles are dangerous on wet roads</li>
+<li><strong>Brake earlier and more gently</strong> — use both brakes; avoid harsh front-brake use</li>
+<li><strong>Increase following distance</strong> — at least a 3-second gap</li>
+<li><strong>Watch for specific hazards</strong> — painted lines, manhole covers, metal plates, tram tracks all become dangerously slippery. Cross tram tracks close to 90 degrees with no braking or accelerating.</li>
+<li><strong>Cobblestones in rain</strong> — slow right down, keep relaxed, avoid sudden inputs</li>
+<li><strong>Puddles hide potholes</strong> — slow down; ease off brakes through puddles; test brakes gently afterward</li>
+</ul>
+<h2>When Ice Appears</h2>
+<p>Freezing rain, black ice, and frost appear in shaded areas, on bridges, and early mornings. Check RMI weather warnings before riding. Seriously consider whether riding is worth the risk — motorcycles have far less traction than cars on ice. If you do ride: use the highest gear possible, avoid sudden inputs, keep speed very low.</p>
+<h2>Wet-Weather Gear</h2>
+<p>Waterproof jacket and trousers (or one-piece suit) are non-negotiable. Waterproof gloves maintain dexterity and grip. Waterproof boots keep feet dry and warm. Ensure visor seals properly; consider breath guard or anti-fog coating.</p>
+<h2>Support When You Need It</h2>
+<p>Conditions feel unsafe? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-motorcycle-8" data-vehicle="motorcycle">
+            <div class="card">
+                <div class="section-badge">8</div>
+                <div class="section-title">Combatting Fatigue for Motorcycle/Moped Riders</div>
+                <h2>Why Fatigue Matters</h2>
+<p>Fatigue is one of the biggest contributors to motorcycle accidents. While overall road deaths in Belgium have dropped, motorcyclist and moped rider fatalities remain stubbornly high. Riding while exhausted makes you genuinely dangerous.</p>
+<h2>What Causes Fatigue</h2>
+<ul>
+<li><strong>Not enough quality sleep</strong> — skimping catches up fast</li>
+<li><strong>Time of day</strong> — late-night and early-morning runs fight your body's natural rhythms</li>
+<li><strong>Working too much</strong> — back-to-back orders for hours drain you quickly</li>
+</ul>
+<h2>Warning Signs</h2>
+<ul>
+<li>Constant yawning</li>
+<li>Struggling to focus</li>
+<li>Sore, heavy eyes or blurred vision</li>
+<li>Slow reactions to obstacles or traffic</li>
+<li>Zoning out — can't remember the last few minutes</li>
+<li>Wobbling, swerving, or trouble maintaining a steady line</li>
+<li>Micro-sleeps — eyes closing for 1–2 seconds</li>
+</ul>
+<p>Pull over immediately if any of these happen.</p>
+<h2>Prevention</h2>
+<ul>
+<li>Get 7–8 hours of sleep before your run</li>
+<li>Be extra cautious during night runs</li>
+<li>Take a 15-minute break every 2 hours — get off the bike, stretch, walk around</li>
+<li>Eat balanced meals, not heavy ones</li>
+<li>Check medications for drowsiness</li>
+<li>Plan routes with safe stopping points</li>
+<li>Stay hydrated — keep water with you</li>
+</ul>
+<h2>Support When You Need It</h2>
+<p>Struggling with fatigue? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-bike-1" data-vehicle="bike">
+            <div class="card">
+                <div class="section-badge">1</div>
+                <div class="section-title">Setting Up Your E-Bike for a Safer Ride</div>
+                <h2>The 3-Minute Pre-Start Check</h2>
+<p><strong>Tyres:</strong> Give them a firm squeeze — they should feel solid, not soft. Check the pressure marking on the side. Under-inflated tyres make steering harder and increase puncture risk.</p>
+<p><strong>Seat:</strong> Adjust to the right height; confirm it's inserted at least 5cm into the frame. A loose seat can shift unexpectedly while riding.</p>
+<p><strong>Wheels & Brakes:</strong> Lift the handlebars and spin the front wheel — it should be secure and spin freely without rubbing brake pads. Test both brakes for quick, smooth response. Check gears shift without sticking or grinding.</p>
+<h2>Essential Gear for Every Ride</h2>
+<ul>
+<li><strong>Helmet</strong> — not legally required for standard e-bikes, but strongly recommended</li>
+<li><strong>High-visibility vest</strong> — so drivers can see you, especially in poor light</li>
+<li><strong>Enclosed shoes</strong> — protect feet and give pedal grip</li>
+<li><strong>Mobile phone holder</strong> — handling your phone while riding is illegal and dangerous</li>
+<li><strong>Waterproof clothing</strong> — be prepared for Belgium's weather</li>
+</ul>
+<h2>Support When You Need It</h2>
+<p>Issues while delivering? Use live chat in the app. In an emergency, call <strong>112</strong>. For road safety guidance, visit <strong>veiligverkeer.be</strong> or <strong>wegcode.be</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-bike-2" data-vehicle="bike">
+            <div class="card">
+                <div class="section-badge">2</div>
+                <div class="section-title">Choosing the Right E-Bike for Deliveries</div>
+                <h2>Belgium's E-Bike Laws</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>Standard e-bikes (pedelecs) are classified as bicycles. Your e-bike's motor must not exceed 250W. Anything more powerful is classified as a speed pedelec or moped — requiring a license, registration, license plate, and mandatory helmet.</p>
+<p>Battery-assisted power must automatically cut off at 25 km/h. If your bike continues assisting beyond that speed, it's not road-legal and you could face fines.</p>
+</div>
+<h2>Never Modify Your E-Bike</h2>
+<p>Tampering with motor or speed settings makes your bike illegal without registration and a license. It also makes the bike harder to control, increases braking distances, and voids insurance. Always keep your e-bike in original manufacturer settings.</p>
+<h2>Required Lighting & Reflectors</h2>
+<div class="safety-tip"><div class="safety-tip-title">&#10004; Safety Tip</div>
+<p>When riding after sunset or in poor visibility, Belgian law requires:</p>
+<ul>
+<li>White or yellow front light, red rear light (visible and working)</li>
+<li>White front reflector, red rear reflector</li>
+<li>Yellow/orange pedal reflectors</li>
+<li>Reflective elements on wheels</li>
+</ul>
+<p>Lights can be attached to clothing or bag, but fixing quality lights to your bike is recommended. Riding without reflectors can result in fines of around €58.</p>
+</div>
+<h2>Support When You Need It</h2>
+<p>E-bike setup questions? Use live chat in the app. For cycling regulations, visit <strong>veiligverkeer.be</strong> or <strong>wegcode.be</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-bike-3" data-vehicle="bike">
+            <div class="card">
+                <div class="section-badge">3</div>
+                <div class="section-title">Lithium-Ion Battery Safety</div>
+                <h2>Warning Signs of Battery Damage</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>Stop using or charging immediately if you notice:</p>
+<ul>
+<li>Battery has swelled or changed shape</li>
+<li>Leaks coming from the battery</li>
+<li>Unusually hot while charging or in use</li>
+<li>Visible scratches, dents, or cracks</li>
+<li>Colour change or discolouration</li>
+<li>Strong chemical or burning odour</li>
+</ul>
+</div>
+<h2>Charging Safely</h2>
+<div class="safety-tip"><div class="safety-tip-title">&#10004; Safety Tip</div>
+<ul>
+<li>Use only the manufacturer's charger — a different charger can cause overheating or fire</li>
+<li>Don't charge on or near flammable surfaces (beds, sofas, wooden furniture)</li>
+<li>Charge away from living areas where possible (garage, utility room)</li>
+<li>Don't charge overnight or when you're not home</li>
+<li>Keep a working smoke alarm nearby</li>
+<li>Keep the area around the battery clear — don't block escape routes</li>
+</ul>
+</div>
+<h2>Storing Spare Batteries</h2>
+<p>Use battery bags designed to protect against moisture and impacts. Some are fire-resistant and can slow or contain a fire.</p>
+<h2>Disposing of Damaged Batteries</h2>
+<p>Never throw lithium-ion batteries in household waste. In Belgium, dispose via <strong>Bebat</strong> (over 22,000 collection points — recycling centres, bike shops, retail stores). If the battery is swollen or leaking, let staff know. If the battery can't be removed from the e-bike, take the whole bike to a specialised recycling centre.</p>
+<h2>Support When You Need It</h2>
+<p>Battery safety questions? Use live chat in the app. In a fire emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-bike-4" data-vehicle="bike">
+            <div class="card">
+                <div class="section-badge">4</div>
+                <div class="section-title">Protect Yourself While You Ride</div>
+                <h2>Helmet — Your Essential Protection</h2>
+<p>Not legally required for standard e-bikes, but the most important safety decision you can make. Choose one meeting <strong>EN 1078</strong>. Fasten every ride. Replace every 3–5 years or immediately after any impact.</p>
+<h2>High-Visibility Outer-Wear</h2>
+<p>Wear a high-vis vest or jacket meeting <strong>EN ISO 20471</strong> standards, fastened at the front. Fluorescent materials for daytime visibility; retroreflective strips for night. Being visible dramatically reduces collision risk.</p>
+<h2>Eye Protection</h2>
+<p>Shatterproof safety-style sunglasses protect from dust, wind, rain, and debris. Keep lenses clean and scratch-free.</p>
+<h2>Seasonal Protection</h2>
+<ul>
+<li><strong>Summer:</strong> Apply sunscreen every 2–4 hours, even on cloudy days. Long-sleeved shirt under high-vis for extra UV protection.</li>
+<li><strong>Winter:</strong> Neck gaiter for cold wind. At least three layers for insulation. Waterproof jacket and trousers essential — wet clothing reduces body temperature, concentration, and reaction time.</li>
+</ul>
+<h2>Footwear</h2>
+<p>Avoid open-toe shoes. Use non-slip, covered shoes with secure pedal grip — especially important in wet conditions.</p>
+<h2>Support When You Need It</h2>
+<p>Safety equipment questions? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-bike-5" data-vehicle="bike">
+            <div class="card">
+                <div class="section-badge">5</div>
+                <div class="section-title">Safe Use of Delivery Equipment</div>
+                <h2>Thermal Bag Positioning</h2>
+<p>If using as a backpack: tighten straps firmly — no gap between bag and back. A loose bag shifts when you turn, lean, or brake, throwing off balance and risking loss of control.</p>
+<p>If mounted on the bike: ensure it's securely fastened and doesn't move when tested. A dislodged bag mid-ride is a serious hazard.</p>
+<h2>Loading Your Thermal Bag</h2>
+<p>Heavy items at the bottom, lightest on top. Stable centre of gravity prevents the load from shifting. Separate hot food from cold items.</p>
+<h2>Phone Use While Riding</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>Never use your phone while riding. Use a fixed cradle for GPS only. Always pull over to a safe place and stop before using your phone or the Courier App.</p>
+</div>
+<h2>Support When You Need It</h2>
+<p>Equipment questions? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-bike-6" data-vehicle="bike">
+            <div class="card">
+                <div class="section-badge">6</div>
+                <div class="section-title">Road Safety & Lane Selection</div>
+                <h2>Right-of-Way Rules</h2>
+<ul>
+<li>At unmarked intersections, traffic from your right has priority</li>
+<li>On continuous cycle paths crossing a road, drivers should yield to you — but don't assume they will. Make eye contact.</li>
+<li>On roundabouts, yield to traffic already inside; motorised vehicles inside must yield to cyclists also circulating</li>
+<li>Zebra crossings are for pedestrians — dismount and walk your bike across to get right of way</li>
+<li>In bicycle streets (fietsstraat), cars are guests — they can't overtake you and are limited to 30 km/h</li>
+<li>Red means stop, even on a bike</li>
+</ul>
+<h2>Cycling Infrastructure Types</h2>
+<table>
+<thead><tr>
+<th>Type</th>
+<th>Sign/Marking</th>
+<th>Rules</th>
+</tr></thead><tbody>
+<tr>
+<td>Fietspad (cycle path)</td>
+<td>Blue sign D7 or white lines</td>
+<td>Legally required to use if on your right; never use one on the left side</td>
+</tr>
+<tr>
+<td>Fietsstrook (cycle lane)</td>
+<td>Road markings</td>
+<td>Same rules as fietspad; cars can't stop, park, or drive on it</td>
+</tr>
+<tr>
+<td>Non-mandatory path</td>
+<td>Sign R12</td>
+<td>Your choice — use it or ride on the road</td>
+</tr>
+<tr>
+<td>Suggestion lane (fietssuggestiestrook)</td>
+<td>Coloured strip</td>
+<td>Not a legal cycle path; cars can drive, stop, and park on it</td>
+</tr>
+<tr>
+<td>Shared path</td>
+<td>Pedestrian + bike sign</td>
+<td>Pedestrians have priority; slow down, use your bell</td>
+</tr>
+</tbody>
+</table>
+<h2>Where to Position Yourself</h2>
+<p>When no cycle path is available, ride as close to the right edge as practical — but not in the gutter. Maintain about 50cm (roughly an arm's length) from the edge or parked cars. This keeps you out of the door zone and gives room to avoid potholes without swerving into traffic.</p>
+<p><strong>Door zone:</strong> Stay at least 1m from parked vehicles. Don't weave in and out of parking bays — pick a steady line.</p>
+<h2>When Drivers Overtake You</h2>
+<p>Drivers must give you at least 1m in built-up areas, 1.5m outside. If the road is too narrow, they must wait — you're not obstructing traffic by being on the road.</p>
+<h2>Key Road Hazards</h2>
+<ul>
+<li><strong>Uneven surfaces</strong> — potholes, cobblestones, cracked pavement can damage tyres or throw you off balance</li>
+<li><strong>Tram tracks</strong> — extremely slippery when wet; cross at 90 degrees; trams always have priority</li>
+<li><strong>Door zone</strong> — keep 1.5m from parked cars; look for signs someone's inside</li>
+<li><strong>Intersections</strong> — where most accidents happen; make eye contact, use hand signals</li>
+<li><strong>Weather</strong> — wet leaves, ice, and snow reduce grip; slow down, increase braking distance</li>
+<li><strong>Heavy traffic</strong> — ride defensively; assume drivers haven't seen you</li>
+</ul>
+<h2>Support When You Need It</h2>
+<p>Road questions? Use live chat in the app. For cycling rules, visit <strong>veiligverkeer.be</strong> or <strong>wegcode.be</strong>. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-bike-7" data-vehicle="bike">
+            <div class="card">
+                <div class="section-badge">7</div>
+                <div class="section-title">Adverse Weather Riding</div>
+                <h2>Expect Rain</h2>
+<p>Belgium averages 12–15 rainy days per month. The trick is learning to ride safely in it, not avoiding it.</p>
+<h2>Visibility First</h2>
+<p>Use front and rear lights even during the day in grey or wet conditions. A high-vis vest is required by law when riding outside built-up areas. Keep lenses clean.</p>
+<h2>Adjust How You Ride</h2>
+<ul>
+<li><strong>Slow down</strong> — especially when cornering</li>
+<li><strong>Brake earlier and more gently</strong> — avoid sudden movements</li>
+<li><strong>Watch for slippery hazards</strong> — painted lines, manhole covers, tram tracks. Cross tram tracks at close to 90 degrees.</li>
+<li><strong>Cobblestones in rain</strong> — sit down, keep weight over the back wheel, pick a steady line down the middle</li>
+<li><strong>Puddles hide potholes</strong> — slow down; go around if possible</li>
+<li><strong>Lower tyre pressure slightly</strong> can improve grip, but don't overdo it — too soft increases pinch flat risk</li>
+</ul>
+<h2>When Ice Appears</h2>
+<p>Freezing rain, black ice, and frost appear in shaded areas, on bridges, and early mornings. Check RMI warnings before riding. Consider whether the delivery is worth the risk. If you do ride: use wider tyres if possible, ride smoothly with weight centred, avoid sudden inputs.</p>
+<h2>Wet-Weather Gear</h2>
+<p>Waterproof and windproof layers are non-negotiable. Rain jacket and trousers prevent dangerous body temperature drops. Waterproof gloves maintain grip. Shoe covers keep feet dry. Use clear or amber-tinted lenses to cut glare. Consider fenders to stop spray obscuring your view.</p>
+<h2>Support When You Need It</h2>
+<p>Conditions feel unsafe? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-bike-8" data-vehicle="bike">
+            <div class="card">
+                <div class="section-badge">8</div>
+                <div class="section-title">Combatting Fatigue for Courier Cyclists</div>
+                <h2>Why Fatigue Matters</h2>
+<p>Fatigue is one of the biggest contributors to cycling accidents. Belgium has seen a worrying trend: while overall road deaths have dropped, cyclist fatalities are rising. In 2023, 96 cyclists were killed on Belgian roads — the highest number in two decades.</p>
+<h2>What Causes Fatigue</h2>
+<ul>
+<li><strong>Not enough quality sleep</strong> — skimping catches up fast</li>
+<li><strong>Time of day</strong> — late-night and early-morning runs fight your body's natural rhythms</li>
+<li><strong>Working too much</strong> — back-to-back orders for hours drain you quickly</li>
+</ul>
+<h2>Warning Signs</h2>
+<ul>
+<li>Constant yawning</li>
+<li>Struggling to focus</li>
+<li>Sore, heavy eyes or blurred vision</li>
+<li>Slow reactions to obstacles or traffic</li>
+<li>Zoning out — can't remember the last few minutes</li>
+<li>Wobbling, swerving, or trouble keeping a straight line</li>
+</ul>
+<p>Pull over immediately if any of these happen.</p>
+<h2>Prevention</h2>
+<ul>
+<li>Get 7–8 hours of sleep before your run</li>
+<li>Be extra cautious during night runs</li>
+<li>Take a 15-minute break every 2 hours — get off the bike, stretch, walk around</li>
+<li>Eat balanced meals, not heavy ones</li>
+<li>Check medications for drowsiness</li>
+<li>Plan routes avoiding overly steep hills; factor in safe stopping points</li>
+<li>Stay hydrated — keep water with you</li>
+</ul>
+<h2>Support When You Need It</h2>
+<p>Struggling with fatigue? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-all-1" data-vehicle="all">
+            <div class="card">
+                <div class="section-badge shared">&#10003;</div>
+                <div class="section-title">Delivery Hazards</div>
+                <h2>Take Five Seconds to Assess</h2>
+<p>When you arrive at a delivery address, pause and look around. Is the path clear? Are there obvious hazards? A quick "Take 5" mental check can spot risks before they become problems.</p>
+<h2>Slips, Trips, and Falls</h2>
+<ul>
+<li><strong>Slip hazards:</strong> Wet paving, moss-covered tiles, oily driveways — slow down and test your footing</li>
+<li><strong>Trip hazards:</strong> Loose stones, garden tools, toys, uneven slabs — keep eyes on the ground</li>
+<li><strong>Fall hazards:</strong> Staircases, steep steps, poorly lit entryways — use your phone's torch if needed</li>
+</ul>
+<p>Risk increases significantly at dusk, night, or during winter. Wear non-slip shoes.</p>
+<h2>Dealing with Pets</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>If you see or hear an animal and you're not comfortable, contact the customer and ask them to secure the pet or meet you outside.</p>
+<p>If facing an aggressive dog:</p>
+<ul>
+<li><strong>Do:</strong> Stay calm, keep quiet, use a firm low voice, stand upright, move to higher ground if possible</li>
+<li><strong>Don't:</strong> Panic, scream, run, flail arms, make direct eye contact, or jump up and down</li>
+</ul>
+<p>In Belgium, dog owners are strictly liable for harm their animal causes. If bitten, report to police on <strong>101</strong> (or <strong>112</strong> in emergency). Notify Takeaway.com through the app.</p>
+</div>
+<h2>Handling Abusive Behaviour</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>If someone is verbally or physically aggressive:</p>
+<ol>
+<li>Move to a safe distance immediately</li>
+<li>Stay calm — don't engage, argue, or retaliate</li>
+<li>Report it via the Courier App as soon as possible</li>
+</ol>
+<p>If physically assaulted, call police on <strong>101</strong> (or <strong>112</strong> in emergency). File a report at the nearest police station. You have the right to feel safe while working.</p>
+</div>
+<h2>Carry Emergency Contact Details</h2>
+<p>Keep emergency contact information on a physical card in your wallet or bag — not just on your phone. Paramedics and police may not be able to unlock your phone.</p>
+<h2>Support When You Need It</h2>
+<p>Unsure about a delivery? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-all-2" data-vehicle="all">
+            <div class="card">
+                <div class="section-badge shared">&#10003;</div>
+                <div class="section-title">Hazard Awareness — The "Take 5" Method</div>
+                <p>As a courier, your work environment extends beyond the roads. Before undertaking any new task or facing changed conditions, run a quick hazard assessment.</p>
+<h2>Five Key Questions</h2>
+<ol>
+<li><strong>What are the potential hazards?</strong> (slippery surfaces, poorly lit entrances, aggressive animals, heavy packages, weather, road hazards)</li>
+<li><strong>What risks do these hazards pose?</strong> (falls, injuries, exposure, theft, delays, confrontations)</li>
+<li><strong>What measures can I take to control these risks?</strong> (non-slip shoes, flashlight, route planning, hand truck, weather checks, reduced speed)</li>
+<li><strong>Do I have the necessary equipment and skills?</strong> (proper gear, working lights, area familiarity, handling ability)</li>
+<li><strong>Am I confident I can perform this task safely?</strong> (If not, seek advice or assistance)</li>
+</ol>
+<h2>General Considerations</h2>
+<ul>
+<li><strong>Building access:</strong> Be aware of intercoms, key codes, and secure entrances</li>
+<li><strong>Customer interactions:</strong> Maintain professionalism; be aware of communication barriers</li>
+<li><strong>Weather:</strong> Be prepared for changing conditions</li>
+<li><strong>Personal safety:</strong> Be aware of surroundings, especially during late-night deliveries or in unfamiliar areas</li>
+<li><strong>Package handling:</strong> Be aware of weight and size; use appropriate lifting techniques</li>
+</ul>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-all-3" data-vehicle="all">
+            <div class="card">
+                <div class="section-badge shared">&#10003;</div>
+                <div class="section-title">Manual Handling — Protecting Your Back</div>
+                <h2>Think Before You Lift</h2>
+<p>Assess the bag's weight, shape, and stability. Plan your path — are there steps, uneven surfaces, or obstacles?</p>
+<h2>Lifting Technique</h2>
+<div class="safety-tip"><div class="safety-tip-title">&#10004; Safety Tip</div>
+<ol>
+<li><strong>Keep it close</strong> — hold the bag as close to your waist as possible; distance multiplies strain on your lower back</li>
+<li><strong>Stable base</strong> — feet shoulder-width apart for balance</li>
+<li><strong>Grip properly</strong> — firm, secure hold with both hands</li>
+<li><strong>Bend your knees, not your back</strong> — let your leg muscles do the work</li>
+<li><strong>Keep your back straight</strong> — neutral, upright position throughout</li>
+<li><strong>Don't twist</strong> — move your feet to change direction; keep hips and shoulders aligned</li>
+<li><strong>Look ahead</strong> — head up, eyes forward for balance and posture</li>
+</ol>
+</div>
+<h2>Know Your Limits</h2>
+<p>European standards suggest a reference weight of 15kg for the general working population, up to 25kg under optimal conditions. If a bag feels too heavy, ask the restaurant to split the order or contact support.</p>
+<h2>Listen to Your Body</h2>
+<p>Pain is your body telling you something is wrong. If your back aches or shoulders feel tight, take a break. Ignoring early warning signs turns minor strains into serious long-term injuries.</p>
+<h2>Support When You Need It</h2>
+<p>Experiencing pain? Use live chat in the app. If you sustain a back injury, seek medical attention and report it.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page-all-4" data-vehicle="all">
+            <div class="card">
+                <div class="section-badge shared">&#10003;</div>
+                <div class="section-title">Delivering in Hot Weather</div>
+                <h2>Belgium's Summers Are Getting Hotter</h2>
+<p>Heat waves have become more frequent and intense, with temperatures above 38°C in recent summers. Belgium activates its national "Ozone and Heat Plan" between May and September. People are now exposed to over 50 hours of heat stress conditions annually — 66% more than in the 1990s.</p>
+<h2>The Risks</h2>
+<ul>
+<li><strong>UV exposure</strong> — severe sunburn and skin cancer risk; couriers on bikes and motorbikes are particularly exposed</li>
+<li><strong>Dehydration</strong> — headache is an early symptom; by the time you feel thirsty, you're already dehydrated</li>
+<li><strong>Heat stress</strong> — extreme tiredness, muscle cramps, nausea, vomiting</li>
+<li><strong>Heat stroke</strong> — medical emergency; body overheats and can't regulate temperature; can be fatal</li>
+</ul>
+<h2>Recognising Warning Signs</h2>
+<p>Heavy sweating (or hot, dry skin), paleness or flushed skin, headache, dizziness, extreme tiredness, muscle cramps, nausea, or vomiting. If you notice any of these, <strong>stop delivering immediately</strong>.</p>
+<h2>What to Do: Heat Stress</h2>
+<p>Move to shade or indoors. Remove excess clothing. Drink water slowly and steadily. Cool down with cold water on forehead, neck, and arms. Rest. If symptoms don't improve after 30 minutes, contact your GP.</p>
+<h2>What to Do: Heat Stroke</h2>
+<div class="warning-box"><div class="warning-title">&#9888; Warning</div>
+<p>Hot, dry skin; confusion; loss of consciousness; rapid pulse — call <strong>112</strong> immediately. While waiting: remove excess clothing, use fans, apply wet cloths. Do not give ice-cold water or plunge into cold water — this can cause shock.</p>
+</div>
+<h2>Prevention</h2>
+<div class="safety-tip"><div class="safety-tip-title">&#10004; Safety Tip</div>
+<ul>
+<li>Wear lightweight, light-coloured, long-sleeved clothing — it protects better from UV than bare skin</li>
+<li>Apply SPF 30+ sunscreen every 2–4 hours; don't skip neck, ears, and backs of hands</li>
+<li>Drink water regularly throughout your run — carry a bottle and refill whenever possible</li>
+<li>Take regular breaks in shade or air-conditioning</li>
+<li>Check if your medications increase heat sensitivity — ask your doctor or pharmacist</li>
+<li>Monitor RMI heat warnings before your run</li>
+</ul>
+</div>
+<h2>Support When You Need It</h2>
+<p>Struggling with heat? Use live chat in the app. In a heat-related emergency, call <strong>112</strong>. For heat stress (not heat stroke), contact your GP first.</p>
+<p># Appendix: Content-to-Component Mapping</p>
+<p>This appendix shows how each content block maps to HTML components in the reference design.</p>
+                <div class="navigation">
+                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
+                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+        <div class="completion-message" id="completionMessage">
+            <div class="completion-card">
+                <h2>&#10003; Pack Complete!</h2>
+                <p style="font-size: 16px; color: #666; margin-bottom: 20px;">You've reviewed all the safety information for your vehicle type. Stay safe out on the road!</p>
+                <p style="font-size: 14px; color: #999; margin-bottom: 25px;">In an emergency, always call <strong>112</strong>.</p>
+                <button class="nav-button" onclick="resetPack()">Review Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentPage = 0;
+        let selectedVehicle = null;
+        let visiblePageIds = ['page0', 'page1'];
+
+        function getVisiblePageIds() {
+            let pages = ['page0', 'page1'];
+            if (selectedVehicle) {
+                document.querySelectorAll('.page[data-vehicle="' + selectedVehicle + '"]').forEach(function(p) {
+                    pages.push(p.id);
+                });
+                document.querySelectorAll('.page[data-vehicle="all"]').forEach(function(p) {
+                    pages.push(p.id);
+                });
+            }
+            return pages;
+        }
+
+        function updateProgress() {
+            var total = visiblePageIds.length;
+            var progress = ((currentPage + 1) / total) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progressText').textContent = 'Page ' + (currentPage + 1) + ' of ' + total;
+        }
+
+        function showPage() {
+            document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
+            var pageId = visiblePageIds[currentPage];
+            var page = document.getElementById(pageId);
+            if (page) {
+                page.classList.add('active');
+                page.style.animation = 'none';
+                page.offsetHeight;
+                page.style.animation = '';
+            }
+            updateProgress();
+
+            var navs = page ? page.querySelectorAll('.navigation') : [];
+            navs.forEach(function(nav) {
+                var buttons = nav.querySelectorAll('button');
+                if (buttons.length >= 2) {
+                    buttons[0].disabled = currentPage === 0;
+                    if (currentPage === visiblePageIds.length - 1) {
+                        buttons[1].textContent = 'Complete Pack \u2713';
+                        buttons[1].setAttribute('onclick', 'showCompletion()');
+                    } else {
+                        buttons[1].textContent = 'Next \u2192';
+                        buttons[1].setAttribute('onclick', 'changePage(1)');
+                    }
+                }
+            });
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function changePage(direction) {
+            var newPage = currentPage + direction;
+            if (newPage >= 0 && newPage < visiblePageIds.length) {
+                currentPage = newPage;
+                showPage();
+            }
+        }
+
+        function showCompletion() {
+            document.getElementById('completionMessage').style.display = 'flex';
+            document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
+            document.getElementById('progressFill').style.width = '100%';
+            document.getElementById('progressText').textContent = 'Complete!';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function selectVehicle(vehicle) {
+            selectedVehicle = vehicle;
+            visiblePageIds = getVisiblePageIds();
+            currentPage = 2;
+            showPage();
+        }
+
+        function resetPack() {
+            currentPage = 0;
+            selectedVehicle = null;
+            visiblePageIds = ['page0', 'page1'];
+            document.getElementById('completionMessage').style.display = 'none';
+            showPage();
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (document.getElementById('completionMessage').style.display === 'flex') return;
+            if (event.key === 'ArrowRight' && currentPage < visiblePageIds.length - 1) {
+                changePage(1);
+            } else if (event.key === 'ArrowLeft' && currentPage > 0) {
+                changePage(-1);
+            }
+        });
+
+        updateProgress();
+    </script>
+</body>
+</html>
