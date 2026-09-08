@@ -8,27 +8,27 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5; color: #333; line-height: 1.6; }
-.header { background: linear-gradient(135deg, #FF8000 0%, #E55A00 100%); padding: 30px 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.15); position: sticky; top: 0; z-index: 100; }
+.header { background: linear-gradient(135deg, #FF9426 0%, #FF8000 100%); padding: 30px 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.15); position: sticky; top: 0; z-index: 100; }
 .header-logo { height: 50px; max-width: 200px; margin-bottom: 8px; object-fit: contain; }
-.header-title { color: white; font-size: 24px; font-weight: bold; margin: 0; }
+.header-title { color: #3D1A00; font-size: 24px; font-weight: bold; margin: 0; }
 .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
 .card { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 20px; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 .section-badge { width: 40px; height: 40px; background: linear-gradient(135deg, #FF8000 0%, #E55A00 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; font-weight: bold; margin-bottom: 15px; }
 .section-badge.shared { background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%); font-size: 14px; }
-.section-title { color: #FF8000; font-size: 24px; font-weight: bold; margin-bottom: 20px; border-bottom: 2px solid #FF8000; padding-bottom: 10px; }
-h2 { color: #FF8000; font-size: 20px; margin: 25px 0 15px; }
+.section-title { color: #B54A00; font-size: 24px; font-weight: bold; margin-bottom: 20px; border-bottom: 2px solid #FF8000; padding-bottom: 10px; }
+h2 { color: #B54A00; font-size: 20px; margin: 25px 0 15px; }
 p { margin-bottom: 15px; }
 ul, ol { margin: 15px 0 15px 30px; }
 li { margin-bottom: 8px; }
 table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-th { background: linear-gradient(135deg, #FF8000 0%, #E55A00 100%); color: white; padding: 12px; text-align: left; font-weight: bold; font-size: 14px; }
+th { background: linear-gradient(135deg, #C94A00 0%, #A33F00 100%); color: white; padding: 12px; text-align: left; font-weight: bold; font-size: 14px; }
 td { padding: 10px 12px; border-bottom: 1px solid #eee; font-size: 14px; }
 tr:nth-child(even) td { background: #fafafa; }
 .safety-tip { background: #e8f5e8; border-left: 5px solid #4CAF50; padding: 15px 20px; margin: 20px 0; border-radius: 8px; }
-.safety-tip-title { color: #4CAF50; font-weight: bold; margin-bottom: 8px; }
+.safety-tip-title { color: #2E7D32; font-weight: bold; margin-bottom: 8px; }
 .warning-box { background: #fff3e0; border-left: 5px solid #FF8000; padding: 15px 20px; margin: 20px 0; border-radius: 8px; }
-.warning-title { color: #E55A00; font-weight: bold; margin-bottom: 8px; }
+.warning-title { color: #B54A00; font-weight: bold; margin-bottom: 8px; }
 .warning-box p, .safety-tip p { margin-bottom: 10px; }
 .warning-box p:last-child, .safety-tip p:last-child { margin-bottom: 0; }
 .warning-box ul, .safety-tip ul, .warning-box ol, .safety-tip ol { margin: 10px 0 10px 30px; }
@@ -47,11 +47,11 @@ tr:nth-child(even) td { background: #fafafa; }
 }
 .page { display: none; animation: fadeIn 0.5s ease-in; }
 .page.active { display: block; }
-.progress-bar { background: rgba(255,255,255,0.9); height: 8px; margin: 15px auto 0; border-radius: 4px; max-width: 600px; overflow: hidden; }
-.progress-fill { background: linear-gradient(90deg, #FF8000, #E55A00); height: 100%; border-radius: 4px; transition: width 0.3s ease; }
-.progress-text { color: white; margin-top: 8px; font-size: 14px; }
+.progress-bar { background: rgba(255,255,255,0.75); height: 8px; margin: 15px auto 0; border-radius: 4px; max-width: 600px; overflow: hidden; }
+.progress-fill { background: linear-gradient(90deg, #A33F00, #7A2E00); height: 100%; border-radius: 4px; transition: width 0.3s ease; }
+.progress-text { color: #fff; margin-top: 8px; font-size: 14px; }
 .navigation { display: flex; justify-content: space-between; align-items: center; margin-top: 40px; padding-top: 30px; border-top: 2px solid #eee; }
-.nav-button { background: linear-gradient(135deg, #FF8000 0%, #E55A00 100%); color: white; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.nav-button { background: linear-gradient(135deg, #C94A00 0%, #A33F00 100%); color: white; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
 .nav-button:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
 .nav-button:disabled { background: #ccc; cursor: not-allowed; transform: none; box-shadow: none; }
 .start-button { background: linear-gradient(135deg, #FF8000 0%, #E55A00 100%); color: white; border: none; padding: 18px 40px; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 30px auto; display: block; }
@@ -70,11 +70,11 @@ tr:nth-child(even) td { background: #fafafa; }
 .completion-card h2 { color: #4CAF50; font-size: 28px; margin-bottom: 15px; border: none; }
 
     
-.skip-button { background: transparent; color: #FF8000; border: 2px solid #FF8000; border-radius: 8px; padding: 12px 28px; cursor: pointer; font-size: 15px; font-weight: bold; margin-top: 8px; }
+.skip-button { background: transparent; color: #B54A00; border: 2px solid #B54A00; border-radius: 8px; padding: 12px 28px; cursor: pointer; font-size: 15px; font-weight: bold; margin-top: 8px; }
 .skip-button:hover { background: #FF8000; color: white; }
 @media (max-width: 600px) { .language-option { padding: 18px 20px; font-size: 16px; } .skip-button { padding: 15px 30px; } }
 
-.skip-button { background: transparent; color: #FF8000; border: 2px solid #FF8000; border-radius: 8px; padding: 12px 28px; cursor: pointer; font-size: 15px; font-weight: bold; margin-top: 8px; }
+.skip-button { background: transparent; color: #B54A00; border: 2px solid #B54A00; border-radius: 8px; padding: 12px 28px; cursor: pointer; font-size: 15px; font-weight: bold; margin-top: 8px; }
 .skip-button:hover { background: #FF8000; color: white; }
 @media (max-width: 600px) { .language-option { padding: 18px 20px; font-size: 16px; } .skip-button { padding: 15px 30px; } }
 
@@ -82,46 +82,108 @@ tr:nth-child(even) td { background: #fafafa; }
 .language-options { display: flex; flex-direction: column; gap: 12px; max-width: 400px; margin: 25px auto; }
 .language-option { background: #fff; color: #333; border: 2px solid #FF8000; border-radius: 10px; padding: 16px 20px; cursor: pointer; font-size: 17px; font-weight: 600; text-align: left; transition: all .2s ease; }
 .language-option:hover { background: #FFF3E0; transform: translateY(-2px); }
-.skip-button { background: transparent; color: #FF8000; border: 2px solid #FF8000; border-radius: 8px; padding: 12px 28px; cursor: pointer; font-size: 15px; font-weight: bold; margin-top: 8px; }
+.skip-button { background: transparent; color: #B54A00; border: 2px solid #B54A00; border-radius: 8px; padding: 12px 28px; cursor: pointer; font-size: 15px; font-weight: bold; margin-top: 8px; }
 .skip-button:hover { background: #FF8000; color: white; }
 @media (max-width: 600px) { .language-option { padding: 18px 20px; font-size: 16px; } .skip-button { padding: 15px 30px; } }
 
-.lang-switcher { position: relative; display: inline-block; margin-bottom: 10px; }
-.lang-current { background: rgba(255,255,255,0.18); border: 1.5px solid rgba(255,255,255,0.6); color: #fff; padding: 7px 14px; border-radius: 999px; cursor: pointer; font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-family: inherit; }
-.lang-current:hover { background: rgba(255,255,255,0.3); }
+
+/* ---- header controls ---- */
+.header-controls { display: flex; gap: 8px; justify-content: center; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+.hdr-btn { background: #fff; border: 1.5px solid rgba(61,26,0,0.18); color: #8A3400; padding: 7px 14px; border-radius: 999px; cursor: pointer; font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-family: inherit; }
+.hdr-btn:hover { background: #FFF3E0; border-color: #8A3400; }
+.lang-switcher { position: relative; display: inline-block; }
 .lang-current .caret { font-size: 10px; transition: transform .2s ease; }
 .lang-switcher.open .lang-current .caret { transform: rotate(180deg); }
-.lang-menu { display: none; position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); background: #fff; border-radius: 12px; box-shadow: 0 8px 28px rgba(0,0,0,0.22); overflow: hidden; z-index: 200; min-width: 210px; text-align: left; }
+.lang-menu { display: none; position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); background: #fff; border-radius: 12px; box-shadow: 0 8px 28px rgba(0,0,0,0.25); overflow: hidden; z-index: 300; min-width: 210px; text-align: left; }
 .lang-switcher.open .lang-menu { display: block; }
 .lang-menu button { display: flex; align-items: center; gap: 10px; width: 100%; background: #fff; border: none; border-bottom: 1px solid #f0f0f0; padding: 12px 16px; cursor: pointer; font-size: 15px; color: #333; text-align: left; font-family: inherit; }
 .lang-menu button:last-child { border-bottom: none; }
 .lang-menu button:hover { background: #FFF3E0; }
-.lang-menu button.active { background: #FFF3E0; font-weight: 700; color: #E55A00; }
-.lang-menu .tick { margin-left: auto; color: #FF8000; font-weight: bold; }
-.lang-code { display: inline-block; min-width: 30px; font-size: 11px; font-weight: 700; letter-spacing: .5px; color: #fff; background: #FF8000; border-radius: 4px; padding: 3px 5px; text-align: center; }
+.lang-menu button.active { background: #FFF3E0; font-weight: 700; color: #B54A00; }
+.lang-menu .tick { margin-left: auto; color: #B54A00; font-weight: bold; }
+.lang-code { display: inline-block; min-width: 30px; font-size: 11px; font-weight: 700; letter-spacing: .5px; color: #fff; background: #A33F00; border-radius: 4px; padding: 3px 5px; text-align: center; }
 
-.lang-gate { position: fixed; inset: 0; background: linear-gradient(160deg, #FF8000 0%, #E55A00 100%); z-index: 999; display: flex; align-items: center; justify-content: center; padding: 24px 18px; overflow-y: auto; }
+/* ---- language gate ---- */
+.lang-gate { position: fixed; inset: 0; background: linear-gradient(160deg, #FF9426 0%, #FF8000 100%); z-index: 999; display: flex; align-items: center; justify-content: center; padding: 24px 18px; overflow-y: auto; }
 .lang-gate.hidden { display: none; }
 .lang-gate-inner { width: 100%; max-width: 420px; }
-.lang-gate h2 { color: #fff; font-size: 21px; margin: 0 0 4px; text-align: center; }
+.lang-gate h2 { color: #3D1A00; font-size: 21px; margin: 0 0 4px; text-align: center; }
 .lang-gate .globe { font-size: 40px; text-align: center; display: block; margin-bottom: 10px; }
-.lang-gate .sub { color: rgba(255,255,255,0.9); font-size: 14px; text-align: center; margin-bottom: 22px; }
+.lang-gate .sub { color: #5C2900; font-size: 14px; text-align: center; margin-bottom: 22px; }
 .lang-card { display: flex; align-items: center; gap: 14px; width: 100%; background: #fff; border: 2px solid transparent; border-radius: 14px; padding: 15px 18px; margin-bottom: 11px; cursor: pointer; text-align: left; font-family: inherit; transition: transform .15s ease, box-shadow .15s ease; }
 .lang-card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.18); }
 .lang-card.suggested { border-color: #2E7D32; }
 .lang-card .native { font-size: 18px; font-weight: 700; color: #222; display: block; }
-.lang-card .english { font-size: 13px; color: #777; display: block; margin-top: 2px; }
-.lang-card .arrow { margin-left: auto; color: #FF8000; font-size: 20px; }
+.lang-card .english { font-size: 13px; color: #6b6b6b; display: block; margin-top: 2px; }
+.lang-card .arrow { margin-left: auto; color: #B54A00; font-size: 20px; }
 .lang-card .badge { display: inline-block; background: #2E7D32; color: #fff; font-size: 10px; font-weight: 700; border-radius: 4px; padding: 2px 6px; margin-left: 8px; vertical-align: middle; letter-spacing: .3px; }
-@media (max-width: 600px) { .lang-card { padding: 16px; } .lang-gate h2 { font-size: 19px; } }
+
+/* ---- contents / settings panel ---- */
+.panel-scrim { position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 400; display: none; }
+.panel-scrim.open { display: block; }
+.panel { position: fixed; top: 0; right: 0; bottom: 0; width: min(370px, 90vw); background: #fff; z-index: 401; transform: translateX(102%); transition: transform .25s ease; display: flex; flex-direction: column; }
+.panel.open { transform: translateX(0); }
+.panel-head { background: #B54A00; color: #fff; padding: 16px 18px; display: flex; align-items: center; justify-content: space-between; }
+.panel-head h3 { margin: 0; font-size: 17px; }
+.panel-close { background: none; border: none; color: #fff; font-size: 26px; line-height: 1; cursor: pointer; padding: 0 4px; font-family: inherit; }
+.panel-body { overflow-y: auto; flex: 1; padding: 6px 0 20px; }
+.panel-section-label { font-size: 11px; font-weight: 700; letter-spacing: .8px; color: #6b6b6b; padding: 16px 18px 6px; text-transform: uppercase; }
+.toc-item { display: flex; align-items: flex-start; gap: 11px; width: 100%; background: #fff; border: none; border-bottom: 1px solid #f2f2f2; padding: 13px 18px; cursor: pointer; text-align: left; font-size: 15px; color: #333; font-family: inherit; line-height: 1.4; }
+.toc-item:hover { background: #FFF3E0; }
+.toc-item.current { background: #FFF3E0; font-weight: 700; color: #B54A00; }
+.toc-num { flex: 0 0 24px; height: 24px; border-radius: 50%; background: #eee; color: #555; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
+.toc-item.current .toc-num { background: #B54A00; color: #fff; }
+.toc-num.shared { background: #2E7D32; color: #fff; font-size: 11px; }
+.panel-action { display: flex; align-items: center; gap: 10px; width: 100%; background: #fff; border: none; border-bottom: 1px solid #f2f2f2; padding: 14px 18px; cursor: pointer; text-align: left; font-size: 15px; color: #333; font-family: inherit; }
+.panel-action:hover { background: #FFF3E0; }
+.textsize-row { display: flex; align-items: center; gap: 8px; padding: 10px 18px 4px; }
+.textsize-row button { flex: 1; background: #fff; border: 2px solid #ddd; border-radius: 8px; padding: 10px; cursor: pointer; font-family: inherit; color: #333; }
+.textsize-row button.active { border-color: #B54A00; background: #FFF3E0; color: #B54A00; font-weight: 700; }
+
+/* ---- text scaling ---- */
+body.text-l .card { font-size: 1.12em; }
+body.text-xl .card { font-size: 1.28em; }
+
+/* ---- accordion sections ---- */
+.card h2.acc { cursor: pointer; display: flex; align-items: flex-start; gap: 10px; user-select: none; }
+.card h2.acc .acc-caret { margin-left: auto; font-size: 13px; flex: 0 0 auto; transition: transform .2s ease; padding-top: 4px; }
+.card h2.acc.collapsed .acc-caret { transform: rotate(-90deg); }
+.acc-body.collapsed { display: none; }
+.acc-toolbar { margin: -6px 0 14px; }
+.acc-toolbar button { background: #fff; border: 1.5px solid #ccc; border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer; color: #444; font-family: inherit; }
+.acc-toolbar button:hover { border-color: #B54A00; color: #B54A00; }
+
+/* ---- completion record ---- */
+.ack-box { text-align: left; background: #fafafa; border: 1px solid #e4e4e4; border-radius: 10px; padding: 16px; margin: 6px 0 18px; }
+.ack-box label.row { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #333; cursor: pointer; line-height: 1.45; }
+.ack-box input[type=checkbox] { width: 20px; height: 20px; flex: 0 0 auto; margin-top: 1px; accent-color: #B54A00; }
+.ack-box input[type=text] { width: 100%; padding: 11px 12px; border: 1.5px solid #ccc; border-radius: 8px; font-size: 15px; font-family: inherit; margin-bottom: 12px; }
+.ack-box .hint { font-size: 12px; color: #6b6b6b; margin: 8px 0 0; }
+.record-done { background: #e8f5e8; border: 1px solid #c5e2c5; border-radius: 10px; padding: 16px; text-align: left; font-size: 14px; color: #1b5e20; margin-bottom: 16px; }
+.record-done strong { display: block; margin-bottom: 6px; }
+.nav-button[disabled] { cursor: not-allowed; }
+
+/* ---- focus visibility (keyboard users) ---- */
+:focus-visible { outline: 3px solid #1a56c4; outline-offset: 2px; border-radius: 4px; }
+.header :focus-visible, .lang-gate :focus-visible { outline-color: #3D1A00; }
+.panel-head :focus-visible { outline-color: #fff; }
+
+@media (max-width: 600px) {
+  .lang-card { padding: 16px; }
+  .lang-gate h2 { font-size: 19px; }
+  .hdr-btn { padding: 6px 12px; font-size: 13px; }
+}
 </style>
 </head>
 <body>
     <div class="lang-gate" id="langGate"></div>
     <div class="header">
-        <div class="lang-switcher" id="langSwitcher">
-            <button class="lang-current" id="langCurrent" onclick="toggleLangMenu(event)" aria-haspopup="true" aria-expanded="false"><span id="langCurrentLabel">English</span><span class="caret">&#9660;</span></button>
-            <div class="lang-menu" id="langMenu" role="menu"></div>
+        <div class="header-controls">
+            <div class="lang-switcher" id="langSwitcher">
+                <button class="hdr-btn lang-current" id="langCurrent" onclick="toggleLangMenu(event)" aria-haspopup="true" aria-expanded="false"><span id="langCurrentLabel">English</span><span class="caret">&#9660;</span></button>
+                <div class="lang-menu" id="langMenu" role="menu"></div>
+            </div>
+            <button class="hdr-btn" id="menuBtn" onclick="openPanel()" aria-haspopup="dialog"><span aria-hidden="true">&#9776;</span> <span id="menuBtnLabel">Contents</span></button>
         </div>
         <img class="header-logo" src="data:image/png;base64,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" alt="Just Eat" />
         <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width: 5%;"></div></div>
@@ -129,24 +191,24 @@ tr:nth-child(even) td { background: #fafafa; }
     </div>
     <div class="container">
         <div class="page active" id="page-en-title" data-lang="en" data-vehicle="all">
-          <div class="card title-page"><h1 style="color: #FF8000; font-size: 28px; margin-bottom: 15px;">Courier Safety Information Pack</h1><p style="font-size: 18px; color: #666; margin-bottom: 20px;">Your guide to staying safe on Belgium's roads</p><div class="section-overview"><p style="font-weight: bold; color: #E55A00; margin-bottom: 10px;">What's inside:</p><p style="font-size: 14px; margin-bottom: 5px;">&#128663; Vehicle setup and legal requirements</p><p style="font-size: 14px; margin-bottom: 5px;">&#9888; Road safety and hazard awareness</p><p style="font-size: 14px; margin-bottom: 5px;">&#127811; Protective gear and delivery equipment</p><p style="font-size: 14px; margin-bottom: 5px;">&#127782; Weather and fatigue guidance</p><p style="font-size: 14px; margin-bottom: 5px;">&#128181; Manual handling and hazard awareness</p></div><button class="start-button" onclick="changePage(1)">Start &rarr;</button></div>
+          <div class="card title-page"><h1 style="color: #B54A00; font-size: 28px; margin-bottom: 15px;">Courier Safety Information Pack</h1><p style="font-size: 18px; color: #5f5f5f; margin-bottom: 20px;">Your guide to staying safe on Belgium's roads</p><div class="section-overview"><p style="font-weight: bold; color: #B54A00; margin-bottom: 10px;">What's inside:</p><p style="font-size: 14px; margin-bottom: 5px;">&#128663; Vehicle setup and legal requirements</p><p style="font-size: 14px; margin-bottom: 5px;">&#9888; Road safety and hazard awareness</p><p style="font-size: 14px; margin-bottom: 5px;">&#129506; Protective gear and delivery equipment</p><p style="font-size: 14px; margin-bottom: 5px;">&#127782; Weather and fatigue guidance</p><p style="font-size: 14px; margin-bottom: 5px;">&#127890; Manual handling and lifting</p></div><button class="start-button" onclick="changePage(1)">Start &rarr;</button></div>
         </div>
         <div class="page" id="page-en-selector" data-lang="en" data-vehicle="all">
-          <div class="card vehicle-selector-page"><div class="section-title">Select Your Vehicle</div><p style="font-size: 16px; color: #666; margin-bottom: 10px;">Choose your vehicle type to see relevant safety information.</p><div class="vehicle-options"><div class="vehicle-option" onclick="selectVehicle('car')"><div class="vehicle-icon">&#128663;</div><div class="vehicle-name">Car</div><div class="vehicle-desc">Delivery by car</div></div><div class="vehicle-option" onclick="selectVehicle('motorcycle')"><div class="vehicle-icon">&#127949;</div><div class="vehicle-name">Motorcycle / Moped</div><div class="vehicle-desc">Two-wheeled motor vehicles</div></div><div class="vehicle-option" onclick="selectVehicle('bike')"><div class="vehicle-icon">&#128692;</div><div class="vehicle-name">E-Bike</div><div class="vehicle-desc">Electric bicycle</div></div></div><div class="navigation"><button class="nav-button" onclick="changePage(-1)">&larr; Back</button><button class="nav-button" disabled style="opacity: 0.5;">Select a vehicle &rarr;</button></div></div>
+          <div class="card vehicle-selector-page"><div class="section-title">Select Your Vehicle</div><p style="font-size: 16px; color: #5f5f5f; margin-bottom: 10px;">Choose your vehicle type to see relevant safety information.</p><div class="vehicle-options"><div class="vehicle-option" onclick="selectVehicle('car')"><div class="vehicle-icon">&#128663;</div><div class="vehicle-name">Car</div><div class="vehicle-desc">Delivery by car</div></div><div class="vehicle-option" onclick="selectVehicle('motorcycle')"><div class="vehicle-icon">&#127949;</div><div class="vehicle-name">Motorcycle / Moped</div><div class="vehicle-desc">Two-wheeled motor vehicles</div></div><div class="vehicle-option" onclick="selectVehicle('bike')"><div class="vehicle-icon">&#128692;</div><div class="vehicle-name">E-Bike</div><div class="vehicle-desc">Electric bicycle</div></div></div><div class="navigation"><button class="nav-button" onclick="changePage(-1)">&larr; Back</button><button class="nav-button" disabled style="opacity: 0.5;">Select a vehicle &rarr;</button></div></div>
         </div>
 
         <div class="page" id="page-nl-title" data-lang="nl" data-vehicle="all">
-          <div class="card title-page"><h1 style="color: #FF8000; font-size: 28px; margin-bottom: 15px;">Veiligheidsinfo voor koeriers</h1><p style="font-size: 18px; color: #666; margin-bottom: 20px;">Alles wat je nodig hebt om veilig te werken op de Belgische weg</p><div class="section-overview"><p style="font-weight: bold; color: #E55A00; margin-bottom: 10px;">Wat vind je hier?</p><p style="font-size: 14px; margin-bottom: 5px;">&#128663; Je voertuig en wat de wet vraagt</p><p style="font-size: 14px; margin-bottom: 5px;">&#9888; Veilig rijden en gevaren zien aankomen</p><p style="font-size: 14px; margin-bottom: 5px;">&#127811; Beschermende kledij en je bezorgmateriaal</p><p style="font-size: 14px; margin-bottom: 5px;">&#127782; Weer en vermoeidheid</p><p style="font-size: 14px; margin-bottom: 5px;">&#128181; Tillen en dragen zonder letsel</p></div><button class="start-button" onclick="changePage(1)">Beginnen &rarr;</button></div>
+          <div class="card title-page"><h1 style="color: #B54A00; font-size: 28px; margin-bottom: 15px;">Veiligheidsinfo voor koeriers</h1><p style="font-size: 18px; color: #5f5f5f; margin-bottom: 20px;">Alles wat je nodig hebt om veilig te werken op de Belgische weg</p><div class="section-overview"><p style="font-weight: bold; color: #B54A00; margin-bottom: 10px;">Wat vind je hier?</p><p style="font-size: 14px; margin-bottom: 5px;">&#128663; Je voertuig en wat de wet vraagt</p><p style="font-size: 14px; margin-bottom: 5px;">&#9888; Veilig rijden en gevaren zien aankomen</p><p style="font-size: 14px; margin-bottom: 5px;">&#129506; Beschermende kledij en je bezorgmateriaal</p><p style="font-size: 14px; margin-bottom: 5px;">&#127782; Weer en vermoeidheid</p><p style="font-size: 14px; margin-bottom: 5px;">&#127890; Tillen en dragen zonder letsel</p></div><button class="start-button" onclick="changePage(1)">Beginnen &rarr;</button></div>
         </div>
         <div class="page" id="page-nl-selector" data-lang="nl" data-vehicle="all">
-          <div class="card vehicle-selector-page"><div class="section-title">Waar rij je mee?</div><p style="font-size: 16px; color: #666; margin-bottom: 10px;">Kies je voertuig, dan tonen we alleen wat voor jou telt.</p><div class="vehicle-options"><div class="vehicle-option" onclick="selectVehicle('car')"><div class="vehicle-icon">&#128663;</div><div class="vehicle-name">Auto</div><div class="vehicle-desc">Leveren met de auto</div></div><div class="vehicle-option" onclick="selectVehicle('motorcycle')"><div class="vehicle-icon">&#127949;</div><div class="vehicle-name">Moto of bromfiets</div><div class="vehicle-desc">Gemotoriseerde tweewielers</div></div><div class="vehicle-option" onclick="selectVehicle('bike')"><div class="vehicle-icon">&#128692;</div><div class="vehicle-name">E-bike</div><div class="vehicle-desc">Elektrische fiets</div></div></div><div class="navigation"><button class="nav-button" onclick="changePage(-1)">&larr; Terug</button><button class="nav-button" disabled style="opacity: 0.5;">Kies een voertuig &rarr;</button></div></div>
+          <div class="card vehicle-selector-page"><div class="section-title">Waar rij je mee?</div><p style="font-size: 16px; color: #5f5f5f; margin-bottom: 10px;">Kies je voertuig, dan tonen we alleen wat voor jou telt.</p><div class="vehicle-options"><div class="vehicle-option" onclick="selectVehicle('car')"><div class="vehicle-icon">&#128663;</div><div class="vehicle-name">Auto</div><div class="vehicle-desc">Leveren met de auto</div></div><div class="vehicle-option" onclick="selectVehicle('motorcycle')"><div class="vehicle-icon">&#127949;</div><div class="vehicle-name">Moto of bromfiets</div><div class="vehicle-desc">Gemotoriseerde tweewielers</div></div><div class="vehicle-option" onclick="selectVehicle('bike')"><div class="vehicle-icon">&#128692;</div><div class="vehicle-name">E-bike</div><div class="vehicle-desc">Elektrische fiets</div></div></div><div class="navigation"><button class="nav-button" onclick="changePage(-1)">&larr; Terug</button><button class="nav-button" disabled style="opacity: 0.5;">Kies een voertuig &rarr;</button></div></div>
         </div>
 
         <div class="page" id="page-fr-title" data-lang="fr" data-vehicle="all">
-          <div class="card title-page"><h1 style="color: #FF8000; font-size: 28px; margin-bottom: 15px;">Infos s&eacute;curit&eacute; pour coursiers</h1><p style="font-size: 18px; color: #666; margin-bottom: 20px;">Tout ce qu'il te faut pour bosser en s&eacute;curit&eacute; sur les routes belges</p><div class="section-overview"><p style="font-weight: bold; color: #E55A00; margin-bottom: 10px;">Au programme&nbsp;:</p><p style="font-size: 14px; margin-bottom: 5px;">&#128663; Ton v&eacute;hicule et ce que la loi demande</p><p style="font-size: 14px; margin-bottom: 5px;">&#9888; Rouler en s&eacute;curit&eacute; et voir venir les dangers</p><p style="font-size: 14px; margin-bottom: 5px;">&#127811; V&ecirc;tements de protection et mat&eacute;riel de livraison</p><p style="font-size: 14px; margin-bottom: 5px;">&#127782; M&eacute;t&eacute;o et fatigue</p><p style="font-size: 14px; margin-bottom: 5px;">&#128181; Porter sans te blesser</p></div><button class="start-button" onclick="changePage(1)">Commencer &rarr;</button></div>
+          <div class="card title-page"><h1 style="color: #B54A00; font-size: 28px; margin-bottom: 15px;">Infos s&eacute;curit&eacute; pour coursiers</h1><p style="font-size: 18px; color: #5f5f5f; margin-bottom: 20px;">Tout ce qu'il te faut pour bosser en s&eacute;curit&eacute; sur les routes belges</p><div class="section-overview"><p style="font-weight: bold; color: #B54A00; margin-bottom: 10px;">Au programme&nbsp;:</p><p style="font-size: 14px; margin-bottom: 5px;">&#128663; Ton v&eacute;hicule et ce que la loi demande</p><p style="font-size: 14px; margin-bottom: 5px;">&#9888; Rouler en s&eacute;curit&eacute; et voir venir les dangers</p><p style="font-size: 14px; margin-bottom: 5px;">&#129506; V&ecirc;tements de protection et mat&eacute;riel de livraison</p><p style="font-size: 14px; margin-bottom: 5px;">&#127782; M&eacute;t&eacute;o et fatigue</p><p style="font-size: 14px; margin-bottom: 5px;">&#127890; Porter et soulever sans te blesser</p></div><button class="start-button" onclick="changePage(1)">Commencer &rarr;</button></div>
         </div>
         <div class="page" id="page-fr-selector" data-lang="fr" data-vehicle="all">
-          <div class="card vehicle-selector-page"><div class="section-title">Tu roules avec quoi&nbsp;?</div><p style="font-size: 16px; color: #666; margin-bottom: 10px;">Choisis ton v&eacute;hicule, on ne t'affiche que ce qui te concerne.</p><div class="vehicle-options"><div class="vehicle-option" onclick="selectVehicle('car')"><div class="vehicle-icon">&#128663;</div><div class="vehicle-name">Voiture</div><div class="vehicle-desc">Livraison en voiture</div></div><div class="vehicle-option" onclick="selectVehicle('motorcycle')"><div class="vehicle-icon">&#127949;</div><div class="vehicle-name">Moto ou cyclo</div><div class="vehicle-desc">Deux-roues motoris&eacute;s</div></div><div class="vehicle-option" onclick="selectVehicle('bike')"><div class="vehicle-icon">&#128692;</div><div class="vehicle-name">V&eacute;lo &eacute;lectrique</div><div class="vehicle-desc">V&eacute;lo &agrave; assistance &eacute;lectrique</div></div></div><div class="navigation"><button class="nav-button" onclick="changePage(-1)">&larr; Retour</button><button class="nav-button" disabled style="opacity: 0.5;">Choisis un v&eacute;hicule &rarr;</button></div></div>
+          <div class="card vehicle-selector-page"><div class="section-title">Tu roules avec quoi&nbsp;?</div><p style="font-size: 16px; color: #5f5f5f; margin-bottom: 10px;">Choisis ton v&eacute;hicule, on ne t'affiche que ce qui te concerne.</p><div class="vehicle-options"><div class="vehicle-option" onclick="selectVehicle('car')"><div class="vehicle-icon">&#128663;</div><div class="vehicle-name">Voiture</div><div class="vehicle-desc">Livraison en voiture</div></div><div class="vehicle-option" onclick="selectVehicle('motorcycle')"><div class="vehicle-icon">&#127949;</div><div class="vehicle-name">Moto ou cyclo</div><div class="vehicle-desc">Deux-roues motoris&eacute;s</div></div><div class="vehicle-option" onclick="selectVehicle('bike')"><div class="vehicle-icon">&#128692;</div><div class="vehicle-name">V&eacute;lo &eacute;lectrique</div><div class="vehicle-desc">V&eacute;lo &agrave; assistance &eacute;lectrique</div></div></div><div class="navigation"><button class="nav-button" onclick="changePage(-1)">&larr; Retour</button><button class="nav-button" disabled style="opacity: 0.5;">Choisis un v&eacute;hicule &rarr;</button></div></div>
         </div>
 
 
@@ -425,7 +487,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <p>Evacuate immediately and call <strong>112</strong>. Do not attempt to extinguish a large lithium-ion fire yourself. For a very small, just-starting fire, use a CO2 extinguisher — never use water on an active electrical fire unless the power source is disconnected.</p>
 </div>
 <h2>Disposing of Damaged Batteries</h2>
-<p>Never throw lithium-ion batteries in household waste. In Belgium, dispose via <strong>Bebat</strong> collection points (check their website for locations). Let staff know if the battery is damaged or swollen.</p>
+<p>Never throw lithium-ion batteries in household waste. In Belgium, dispose via <a href="https://www.bebat.be/en/find-a-collection-point" target="_blank" rel="noopener"><strong>Bebat</strong></a> collection points (check their website for locations). Let staff know if the battery is damaged or swollen.</p>
 <h2>Support When You Need It</h2>
 <p>Battery safety questions? Use live chat in the app. In a fire emergency, call <strong>112</strong>.</p>
                 <div class="navigation">
@@ -605,7 +667,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <li><strong>Waterproof clothing</strong> — be prepared for Belgium's weather</li>
 </ul>
 <h2>Support When You Need It</h2>
-<p>Issues while delivering? Use live chat in the app. In an emergency, call <strong>112</strong>. For road safety guidance, visit <strong>veiligverkeer.be</strong> or <strong>wegcode.be</strong>.</p>
+<p>Issues while delivering? Use live chat in the app. In an emergency, call <strong>112</strong>. For road safety guidance, visit <a href="https://www.veiligverkeer.be" target="_blank" rel="noopener"><strong>veiligverkeer.be</strong></a> or <a href="https://wegcode.be" target="_blank" rel="noopener"><strong>wegcode.be</strong></a>.</p>
                 <div class="navigation">
                     <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
                     <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
@@ -635,7 +697,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <p>Lights can be attached to clothing or bag, but fixing quality lights to your bike is recommended. Riding without reflectors can result in fines of around €58.</p>
 </div>
 <h2>Support When You Need It</h2>
-<p>E-bike setup questions? Use live chat in the app. For cycling regulations, visit <strong>veiligverkeer.be</strong> or <strong>wegcode.be</strong>.</p>
+<p>E-bike setup questions? Use live chat in the app. For cycling regulations, visit <a href="https://www.veiligverkeer.be" target="_blank" rel="noopener"><strong>veiligverkeer.be</strong></a> or <a href="https://wegcode.be" target="_blank" rel="noopener"><strong>wegcode.be</strong></a>.</p>
                 <div class="navigation">
                     <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
                     <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
@@ -672,7 +734,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <h2>Storing Spare Batteries</h2>
 <p>Use battery bags designed to protect against moisture and impacts. Some are fire-resistant and can slow or contain a fire.</p>
 <h2>Disposing of Damaged Batteries</h2>
-<p>Never throw lithium-ion batteries in household waste. In Belgium, dispose via <strong>Bebat</strong> (over 22,000 collection points — recycling centres, bike shops, retail stores). If the battery is swollen or leaking, let staff know. If the battery can't be removed from the e-bike, take the whole bike to a specialised recycling centre.</p>
+<p>Never throw lithium-ion batteries in household waste. In Belgium, dispose via <a href="https://www.bebat.be/en/find-a-collection-point" target="_blank" rel="noopener"><strong>Bebat</strong></a> (over 22,000 collection points — recycling centres, bike shops, retail stores). If the battery is swollen or leaking, let staff know. If the battery can't be removed from the e-bike, take the whole bike to a specialised recycling centre.</p>
 <h2>Support When You Need It</h2>
 <p>Battery safety questions? Use live chat in the app. In a fire emergency, call <strong>112</strong>.</p>
                 <div class="navigation">
@@ -789,7 +851,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <li><strong>Heavy traffic</strong> — ride defensively; assume drivers haven't seen you</li>
 </ul>
 <h2>Support When You Need It</h2>
-<p>Road questions? Use live chat in the app. For cycling rules, visit <strong>veiligverkeer.be</strong> or <strong>wegcode.be</strong>. In an emergency, call <strong>112</strong>.</p>
+<p>Road questions? Use live chat in the app. For cycling rules, visit <a href="https://www.veiligverkeer.be" target="_blank" rel="noopener"><strong>veiligverkeer.be</strong></a> or <a href="https://wegcode.be" target="_blank" rel="noopener"><strong>wegcode.be</strong></a>. In an emergency, call <strong>112</strong>.</p>
                 <div class="navigation">
                     <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
                     <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
@@ -868,17 +930,24 @@ tr:nth-child(even) td { background: #fafafa; }
         <div class="page" id="page-en-all-1" data-lang="en" data-vehicle="all">
             <div class="card">
                 <div class="section-badge shared">&#10003;</div>
-                <div class="section-title">Delivery Hazards</div>
-                <h2>Take Five Seconds to Assess</h2>
-<p>When you arrive at a delivery address, pause and look around. Is the path clear? Are there obvious hazards? A quick "Take 5" mental check can spot risks before they become problems.</p>
-<h2>Slips, Trips, and Falls</h2>
+                <div class="section-title">Delivery Hazards &amp; the "Take 5"</div>
+                <h2>Take five seconds to assess</h2>
+<p>When you arrive at a delivery address, pause and look around. Is the path clear? Are there obvious hazards? Before any new task, or when conditions change, run these five questions:</p>
+<ol>
+<li><strong>What are the potential hazards?</strong> (slippery surfaces, poorly lit entrances, aggressive animals, heavy packages, weather, road hazards)</li>
+<li><strong>What risks do these pose?</strong> (falls, injuries, exposure, theft, delays, confrontations)</li>
+<li><strong>What can I do to control them?</strong> (non-slip shoes, torch, route planning, hand truck, weather check, reduced speed)</li>
+<li><strong>Do I have the equipment and skills?</strong> (proper gear, working lights, area familiarity, handling ability)</li>
+<li><strong>Am I confident I can do this safely?</strong> (If not, seek advice or assistance.)</li>
+</ol>
+<h2>Slips, trips, and falls</h2>
 <ul>
-<li><strong>Slip hazards:</strong> Wet paving, moss-covered tiles, oily driveways — slow down and test your footing</li>
-<li><strong>Trip hazards:</strong> Loose stones, garden tools, toys, uneven slabs — keep eyes on the ground</li>
-<li><strong>Fall hazards:</strong> Staircases, steep steps, poorly lit entryways — use your phone's torch if needed</li>
+<li><strong>Slip hazards:</strong> Wet paving, moss-covered tiles, oily driveways &mdash; slow down and test your footing</li>
+<li><strong>Trip hazards:</strong> Loose stones, garden tools, toys, uneven slabs &mdash; keep eyes on the ground</li>
+<li><strong>Fall hazards:</strong> Staircases, steep steps, poorly lit entryways &mdash; use your phone's torch if needed</li>
 </ul>
 <p>Risk increases significantly at dusk, night, or during winter. Wear non-slip shoes.</p>
-<h2>Dealing with Pets</h2>
+<h2>Dealing with pets</h2>
 <div class="warning-box"><div class="warning-title">&#9888; Warning</div>
 <p>If you see or hear an animal and you're not comfortable, contact the customer and ask them to secure the pet or meet you outside.</p>
 <p>If facing an aggressive dog:</p>
@@ -888,18 +957,25 @@ tr:nth-child(even) td { background: #fafafa; }
 </ul>
 <p>In Belgium, dog owners are strictly liable for harm their animal causes. If bitten, report to police on <strong>101</strong> (or <strong>112</strong> in emergency). Notify Takeaway.com through the app.</p>
 </div>
-<h2>Handling Abusive Behaviour</h2>
+<h2>Handling abusive behaviour</h2>
 <div class="warning-box"><div class="warning-title">&#9888; Warning</div>
 <p>If someone is verbally or physically aggressive:</p>
 <ol>
 <li>Move to a safe distance immediately</li>
-<li>Stay calm — don't engage, argue, or retaliate</li>
+<li>Stay calm &mdash; don't engage, argue, or retaliate</li>
 <li>Report it via the Courier App as soon as possible</li>
 </ol>
 <p>If physically assaulted, call police on <strong>101</strong> (or <strong>112</strong> in emergency). File a report at the nearest police station. You have the right to feel safe while working.</p>
 </div>
-<h2>Carry Emergency Contact Details</h2>
-<p>Keep emergency contact information on a physical card in your wallet or bag — not just on your phone. Paramedics and police may not be able to unlock your phone.</p>
+<h2>Buildings, customers, and packages</h2>
+<ul>
+<li><strong>Building access:</strong> Be aware of intercoms, key codes, and secure entrances</li>
+<li><strong>Customer interactions:</strong> Stay professional; be aware of communication barriers</li>
+<li><strong>Package handling:</strong> Check weight and size before lifting; use proper technique</li>
+<li><strong>Personal safety:</strong> Watch your surroundings, especially on late-night deliveries or in unfamiliar areas</li>
+</ul>
+<h2>Carry emergency contact details</h2>
+<p>Keep emergency contact information on a physical card in your wallet or bag &mdash; not just on your phone. Paramedics and police may not be able to unlock your phone.</p>
 <h2>Support When You Need It</h2>
 <p>Unsure about a delivery? Use live chat in the app. In an emergency, call <strong>112</strong>.</p>
                 <div class="navigation">
@@ -909,33 +985,6 @@ tr:nth-child(even) td { background: #fafafa; }
             </div>
         </div>
         <div class="page" id="page-en-all-2" data-lang="en" data-vehicle="all">
-            <div class="card">
-                <div class="section-badge shared">&#10003;</div>
-                <div class="section-title">Hazard Awareness — The "Take 5" Method</div>
-                <p>As a courier, your work environment extends beyond the roads. Before undertaking any new task or facing changed conditions, run a quick hazard assessment.</p>
-<h2>Five Key Questions</h2>
-<ol>
-<li><strong>What are the potential hazards?</strong> (slippery surfaces, poorly lit entrances, aggressive animals, heavy packages, weather, road hazards)</li>
-<li><strong>What risks do these hazards pose?</strong> (falls, injuries, exposure, theft, delays, confrontations)</li>
-<li><strong>What measures can I take to control these risks?</strong> (non-slip shoes, flashlight, route planning, hand truck, weather checks, reduced speed)</li>
-<li><strong>Do I have the necessary equipment and skills?</strong> (proper gear, working lights, area familiarity, handling ability)</li>
-<li><strong>Am I confident I can perform this task safely?</strong> (If not, seek advice or assistance)</li>
-</ol>
-<h2>General Considerations</h2>
-<ul>
-<li><strong>Building access:</strong> Be aware of intercoms, key codes, and secure entrances</li>
-<li><strong>Customer interactions:</strong> Maintain professionalism; be aware of communication barriers</li>
-<li><strong>Weather:</strong> Be prepared for changing conditions</li>
-<li><strong>Personal safety:</strong> Be aware of surroundings, especially during late-night deliveries or in unfamiliar areas</li>
-<li><strong>Package handling:</strong> Be aware of weight and size; use appropriate lifting techniques</li>
-</ul>
-                <div class="navigation">
-                    <button class="nav-button" onclick="changePage(-1)">&larr; Previous</button>
-                    <button class="nav-button" onclick="changePage(1)">Next &rarr;</button>
-                </div>
-            </div>
-        </div>
-        <div class="page" id="page-en-all-3" data-lang="en" data-vehicle="all">
             <div class="card">
                 <div class="section-badge shared">&#10003;</div>
                 <div class="section-title">Manual Handling — Protecting Your Back</div>
@@ -965,7 +1014,7 @@ tr:nth-child(even) td { background: #fafafa; }
                 </div>
             </div>
         </div>
-        <div class="page" id="page-en-all-4" data-lang="en" data-vehicle="all">
+        <div class="page" id="page-en-all-3" data-lang="en" data-vehicle="all">
             <div class="card">
                 <div class="section-badge shared">&#10003;</div>
                 <div class="section-title">Delivering in Hot Weather</div>
@@ -1285,7 +1334,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <p>Ga meteen naar buiten en bel <strong>112</strong>. Probeer een grote lithium-ionbrand niet zelf te blussen. Is het vuur nog heel klein en pas begonnen, gebruik dan een CO2-blusser &mdash; nooit water op een elektrische brand zolang de stroom niet af is.</p>
 </div>
 <h2>Kapotte batterijen wegdoen</h2>
-<p>Gooi lithium-ionbatterijen nooit bij het huisvuil. In Belgi&euml; breng je ze naar een inzamelpunt van <strong>Bebat</strong> (kijk op hun website waar je terechtkunt). Zeg aan het personeel of de batterij beschadigd of opgezwollen is.</p>
+<p>Gooi lithium-ionbatterijen nooit bij het huisvuil. In Belgi&euml; breng je ze naar een inzamelpunt van <a href="https://www.bebat.be" target="_blank" rel="noopener"><strong>Bebat</strong></a> (kijk op hun website waar je terechtkunt). Zeg aan het personeel of de batterij beschadigd of opgezwollen is.</p>
 <h2>Hulp nodig?</h2>
 <p>Vragen over batterijveiligheid? Gebruik de live chat in de app. Bel bij brand <strong>112</strong>.</p>
                 <div class="navigation">
@@ -1465,7 +1514,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <li><strong>Regenkledij</strong> &mdash; met het Belgische weer heb je die nodig</li>
 </ul>
 <h2>Hulp nodig?</h2>
-<p>Problemen tijdens een levering? Gebruik de live chat in de app. Bel bij nood <strong>112</strong>. Voor de verkeersregels kijk je op <strong>veiligverkeer.be</strong> of <strong>wegcode.be</strong>.</p>
+<p>Problemen tijdens een levering? Gebruik de live chat in de app. Bel bij nood <strong>112</strong>. Voor de verkeersregels kijk je op <a href="https://www.veiligverkeer.be" target="_blank" rel="noopener"><strong>veiligverkeer.be</strong></a> of <a href="https://wegcode.be" target="_blank" rel="noopener"><strong>wegcode.be</strong></a>.</p>
                 <div class="navigation">
                     <button class="nav-button" onclick="changePage(-1)">&larr; Vorige</button>
                     <button class="nav-button" onclick="changePage(1)">Volgende &rarr;</button>
@@ -1495,7 +1544,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <p>Je lichten mogen aan je kledij of je tas hangen, maar goede lichten vast op je fiets zijn beter. Rijden zonder reflectoren kost je ongeveer &euro;58.</p>
 </div>
 <h2>Hulp nodig?</h2>
-<p>Vragen over je e-bike? Gebruik de live chat in de app. Voor de fietsregels kijk je op <strong>veiligverkeer.be</strong> of <strong>wegcode.be</strong>.</p>
+<p>Vragen over je e-bike? Gebruik de live chat in de app. Voor de fietsregels kijk je op <a href="https://www.veiligverkeer.be" target="_blank" rel="noopener"><strong>veiligverkeer.be</strong></a> of <a href="https://wegcode.be" target="_blank" rel="noopener"><strong>wegcode.be</strong></a>.</p>
                 <div class="navigation">
                     <button class="nav-button" onclick="changePage(-1)">&larr; Vorige</button>
                     <button class="nav-button" onclick="changePage(1)">Volgende &rarr;</button>
@@ -1532,7 +1581,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <h2>Reservebatterijen bewaren</h2>
 <p>Gebruik een batterijzak die beschermt tegen vocht en stoten. Sommige zijn brandwerend en houden een brand tegen of vertragen ze.</p>
 <h2>Kapotte batterijen wegdoen</h2>
-<p>Gooi lithium-ionbatterijen nooit bij het huisvuil. In Belgi&euml; breng je ze naar <strong>Bebat</strong> (meer dan 22.000 inzamelpunten: containerparken, fietswinkels, gewone winkels). Is je batterij opgezwollen of lek, zeg het dan tegen het personeel. Kan je de batterij niet uit je fiets halen, breng dan de hele fiets naar een gespecialiseerd recyclagepunt.</p>
+<p>Gooi lithium-ionbatterijen nooit bij het huisvuil. In Belgi&euml; breng je ze naar <a href="https://www.bebat.be" target="_blank" rel="noopener"><strong>Bebat</strong></a> (meer dan 22.000 inzamelpunten: containerparken, fietswinkels, gewone winkels). Is je batterij opgezwollen of lek, zeg het dan tegen het personeel. Kan je de batterij niet uit je fiets halen, breng dan de hele fiets naar een gespecialiseerd recyclagepunt.</p>
 <h2>Hulp nodig?</h2>
 <p>Vragen over batterijveiligheid? Gebruik de live chat in de app. Bel bij brand <strong>112</strong>.</p>
                 <div class="navigation">
@@ -1649,7 +1698,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <li><strong>Druk verkeer</strong> &mdash; rij defensief en ga ervan uit dat ze je niet gezien hebben</li>
 </ul>
 <h2>Hulp nodig?</h2>
-<p>Vragen over de weg? Gebruik de live chat in de app. Voor de fietsregels kijk je op <strong>veiligverkeer.be</strong> of <strong>wegcode.be</strong>. Bel bij nood <strong>112</strong>.</p>
+<p>Vragen over de weg? Gebruik de live chat in de app. Voor de fietsregels kijk je op <a href="https://www.veiligverkeer.be" target="_blank" rel="noopener"><strong>veiligverkeer.be</strong></a> of <a href="https://wegcode.be" target="_blank" rel="noopener"><strong>wegcode.be</strong></a>. Bel bij nood <strong>112</strong>.</p>
                 <div class="navigation">
                     <button class="nav-button" onclick="changePage(-1)">&larr; Vorige</button>
                     <button class="nav-button" onclick="changePage(1)">Volgende &rarr;</button>
@@ -1728,9 +1777,16 @@ tr:nth-child(even) td { background: #fafafa; }
         <div class="page" id="page-nl-all-1" data-lang="nl" data-vehicle="all">
             <div class="card">
                 <div class="section-badge shared">&#10003;</div>
-                <div class="section-title">Gevaren bij het leveren</div>
+                <div class="section-title">Gevaren bij het leveren en de "Take 5"</div>
                 <h2>Neem vijf seconden om rond te kijken</h2>
-<p>Als je aankomt op een leveradres, sta even stil en kijk rond. Is de weg naar de deur vrij? Zie je iets dat mis kan gaan? Die snelle "Take 5" in je hoofd vangt problemen op voor ze er zijn.</p>
+<p>Als je aankomt op een leveradres, sta even stil en kijk rond. Is de weg naar de deur vrij? Zie je iets dat mis kan gaan? Voor je aan iets nieuws begint of als de omstandigheden veranderen, loop je deze vijf vragen af:</p>
+<ol>
+<li><strong>Wat kan hier misgaan?</strong> (gladde ondergrond, donkere inkom, agressieve dieren, zware pakketten, weer, verkeer)</li>
+<li><strong>Welk risico levert dat op?</strong> (vallen, letsel, blootstelling aan het weer, diefstal, vertraging, conflict)</li>
+<li><strong>Wat kan ik daaraan doen?</strong> (antislipschoenen, zaklamp, je route plannen, een steekkar, het weer checken, trager rijden)</li>
+<li><strong>Heb ik het juiste materiaal en de juiste kennis?</strong> (goede uitrusting, werkende lichten, ken je de buurt, kan je dit tillen)</li>
+<li><strong>Ben ik zeker dat ik dit veilig kan?</strong> (Zo niet: vraag raad of hulp.)</li>
+</ol>
 <h2>Uitglijden, struikelen en vallen</h2>
 <ul>
 <li><strong>Glad:</strong> natte klinkers, tegels vol mos, olie op de oprit &mdash; vertraag en test waar je je voet zet</li>
@@ -1758,6 +1814,13 @@ tr:nth-child(even) td { background: #fafafa; }
 </ol>
 <p>Word je fysiek aangevallen, bel dan de politie op <strong>101</strong> (of <strong>112</strong> bij nood). Doe aangifte in het dichtstbijzijnde politiekantoor. Je hebt het recht om je veilig te voelen op je werk.</p>
 </div>
+<h2>Gebouwen, klanten en pakketten</h2>
+<ul>
+<li><strong>Toegang tot gebouwen:</strong> let op parlofoons, codes en beveiligde inkomdeuren</li>
+<li><strong>Contact met klanten:</strong> blijf professioneel en hou rekening met taalbarri&egrave;res</li>
+<li><strong>Pakketten:</strong> check gewicht en omvang voor je tilt, en til op de juiste manier</li>
+<li><strong>Je eigen veiligheid:</strong> let op je omgeving, zeker bij nachtleveringen of in een buurt die je niet kent</li>
+</ul>
 <h2>Hou je noodcontact bij je</h2>
 <p>Schrijf je noodcontact op een kaartje in je portefeuille of tas, niet alleen in je gsm. Ambulanciers en politie geraken misschien niet in je toestel.</p>
 <h2>Hulp nodig?</h2>
@@ -1769,33 +1832,6 @@ tr:nth-child(even) td { background: #fafafa; }
             </div>
         </div>
         <div class="page" id="page-nl-all-2" data-lang="nl" data-vehicle="all">
-            <div class="card">
-                <div class="section-badge shared">&#10003;</div>
-                <div class="section-title">Gevaren inschatten met de "Take 5"</div>
-                <p>Als koerier werk je niet alleen op de weg. Voor je aan iets nieuws begint of als de omstandigheden veranderen, doe je snel een gevareninschatting.</p>
-<h2>Vijf vragen</h2>
-<ol>
-<li><strong>Wat kan hier misgaan?</strong> (gladde ondergrond, donkere inkom, agressieve dieren, zware pakketten, weer, verkeer)</li>
-<li><strong>Welk risico levert dat op?</strong> (vallen, letsel, blootstelling aan het weer, diefstal, vertraging, conflict)</li>
-<li><strong>Wat kan ik daaraan doen?</strong> (antislipschoenen, zaklamp, je route plannen, een steekkar, het weer checken, trager rijden)</li>
-<li><strong>Heb ik het juiste materiaal en de juiste kennis?</strong> (goede uitrusting, werkende lichten, ken je de buurt, kan je dit tillen)</li>
-<li><strong>Ben ik zeker dat ik dit veilig kan?</strong> (Zo niet: vraag raad of hulp.)</li>
-</ol>
-<h2>Waar je verder op let</h2>
-<ul>
-<li><strong>Toegang tot gebouwen:</strong> parlofoons, codes en beveiligde inkomdeuren</li>
-<li><strong>Contact met klanten:</strong> blijf professioneel en hou rekening met taalbarri&egrave;res</li>
-<li><strong>Weer:</strong> wees voorbereid als het kan omslaan</li>
-<li><strong>Je eigen veiligheid:</strong> let op je omgeving, zeker bij nachtleveringen of in een buurt die je niet kent</li>
-<li><strong>Pakketten:</strong> let op gewicht en omvang en til op de juiste manier</li>
-</ul>
-                <div class="navigation">
-                    <button class="nav-button" onclick="changePage(-1)">&larr; Vorige</button>
-                    <button class="nav-button" onclick="changePage(1)">Volgende &rarr;</button>
-                </div>
-            </div>
-        </div>
-        <div class="page" id="page-nl-all-3" data-lang="nl" data-vehicle="all">
             <div class="card">
                 <div class="section-badge shared">&#10003;</div>
                 <div class="section-title">Tillen zonder je rug te slopen</div>
@@ -1825,7 +1861,7 @@ tr:nth-child(even) td { background: #fafafa; }
                 </div>
             </div>
         </div>
-        <div class="page" id="page-nl-all-4" data-lang="nl" data-vehicle="all">
+        <div class="page" id="page-nl-all-3" data-lang="nl" data-vehicle="all">
             <div class="card">
                 <div class="section-badge shared">&#10003;</div>
                 <div class="section-title">Leveren in de hitte</div>
@@ -2141,7 +2177,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <p>Sors imm&eacute;diatement et appelle le <strong>112</strong>. N'essaie pas d'&eacute;teindre toi-m&ecirc;me un feu de lithium-ion important. Si le feu vient tout juste de d&eacute;marrer et reste tr&egrave;s petit, utilise un extincteur CO2 &mdash; jamais d'eau sur un feu &eacute;lectrique tant que le courant n'est pas coup&eacute;.</p>
 </div>
 <h2>Se d&eacute;barrasser d'une batterie ab&icirc;m&eacute;e</h2>
-<p>Ne jette jamais une batterie lithium-ion &agrave; la poubelle. En Belgique, d&eacute;pose-la dans un point de collecte <strong>Bebat</strong> (les adresses sont sur leur site). Pr&eacute;viens le personnel si la batterie est endommag&eacute;e ou gonfl&eacute;e.</p>
+<p>Ne jette jamais une batterie lithium-ion &agrave; la poubelle. En Belgique, d&eacute;pose-la dans un point de collecte <a href="https://www.bebat.be" target="_blank" rel="noopener"><strong>Bebat</strong></a> (les adresses sont sur leur site). Pr&eacute;viens le personnel si la batterie est endommag&eacute;e ou gonfl&eacute;e.</p>
 <h2>Besoin d'aide&nbsp;?</h2>
 <p>Des questions sur les batteries&nbsp;? Passe par le chat en direct dans l'app. En cas d'incendie, appelle le <strong>112</strong>.</p>
                 <div class="navigation">
@@ -2321,7 +2357,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <li><strong>Des v&ecirc;tements de pluie</strong> &mdash; avec la m&eacute;t&eacute;o belge, tu en auras besoin</li>
 </ul>
 <h2>Besoin d'aide&nbsp;?</h2>
-<p>Un souci pendant une livraison&nbsp;? Passe par le chat en direct dans l'app. En cas d'urgence, appelle le <strong>112</strong>. Pour les r&egrave;gles de circulation, va voir <strong>veiligverkeer.be</strong> ou <strong>wegcode.be</strong>.</p>
+<p>Un souci pendant une livraison&nbsp;? Passe par le chat en direct dans l'app. En cas d'urgence, appelle le <strong>112</strong>. Pour les r&egrave;gles de circulation, va voir <a href="https://www.codedelaroute.be/fr" target="_blank" rel="noopener"><strong>codedelaroute.be</strong></a>.</p>
                 <div class="navigation">
                     <button class="nav-button" onclick="changePage(-1)">&larr; Pr&eacute;c&eacute;dent</button>
                     <button class="nav-button" onclick="changePage(1)">Suivant &rarr;</button>
@@ -2351,7 +2387,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <p>Tes feux peuvent &ecirc;tre fix&eacute;s sur tes v&ecirc;tements ou ton sac, mais de bons feux mont&eacute;s sur le v&eacute;lo restent pr&eacute;f&eacute;rables. Rouler sans catadioptres peut te co&ucirc;ter environ 58&nbsp;&euro;.</p>
 </div>
 <h2>Besoin d'aide&nbsp;?</h2>
-<p>Des questions sur ton v&eacute;lo&nbsp;? Passe par le chat en direct dans l'app. Pour les r&egrave;gles cyclistes, va voir <strong>veiligverkeer.be</strong> ou <strong>wegcode.be</strong>.</p>
+<p>Des questions sur ton v&eacute;lo&nbsp;? Passe par le chat en direct dans l'app. Pour les r&egrave;gles cyclistes, va voir <a href="https://www.codedelaroute.be/fr" target="_blank" rel="noopener"><strong>codedelaroute.be</strong></a>.</p>
                 <div class="navigation">
                     <button class="nav-button" onclick="changePage(-1)">&larr; Pr&eacute;c&eacute;dent</button>
                     <button class="nav-button" onclick="changePage(1)">Suivant &rarr;</button>
@@ -2388,7 +2424,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <h2>Stocker tes batteries de rechange</h2>
 <p>Utilise un sac con&ccedil;u pour prot&eacute;ger de l'humidit&eacute; et des chocs. Certains sont ignifug&eacute;s et peuvent ralentir ou contenir un d&eacute;but d'incendie.</p>
 <h2>Se d&eacute;barrasser d'une batterie ab&icirc;m&eacute;e</h2>
-<p>Ne jette jamais une batterie lithium-ion &agrave; la poubelle. En Belgique, d&eacute;pose-la chez <strong>Bebat</strong> (plus de 22.000 points de collecte&nbsp;: recyparcs, magasins de v&eacute;los, commerces). Si elle est gonfl&eacute;e ou qu'elle fuit, pr&eacute;viens le personnel. Si tu ne peux pas retirer la batterie du v&eacute;lo, apporte le v&eacute;lo entier dans un centre de recyclage sp&eacute;cialis&eacute;.</p>
+<p>Ne jette jamais une batterie lithium-ion &agrave; la poubelle. En Belgique, d&eacute;pose-la chez <a href="https://www.bebat.be" target="_blank" rel="noopener"><strong>Bebat</strong></a> (plus de 22.000 points de collecte&nbsp;: recyparcs, magasins de v&eacute;los, commerces). Si elle est gonfl&eacute;e ou qu'elle fuit, pr&eacute;viens le personnel. Si tu ne peux pas retirer la batterie du v&eacute;lo, apporte le v&eacute;lo entier dans un centre de recyclage sp&eacute;cialis&eacute;.</p>
 <h2>Besoin d'aide&nbsp;?</h2>
 <p>Des questions sur les batteries&nbsp;? Passe par le chat en direct dans l'app. En cas d'incendie, appelle le <strong>112</strong>.</p>
                 <div class="navigation">
@@ -2505,7 +2541,7 @@ tr:nth-child(even) td { background: #fafafa; }
 <li><strong>Trafic dense</strong> &mdash; roule en d&eacute;fensive et pars du principe qu'on ne t'a pas vu</li>
 </ul>
 <h2>Besoin d'aide&nbsp;?</h2>
-<p>Des questions sur la route&nbsp;? Passe par le chat en direct dans l'app. Pour les r&egrave;gles cyclistes, va voir <strong>veiligverkeer.be</strong> ou <strong>wegcode.be</strong>. En cas d'urgence, appelle le <strong>112</strong>.</p>
+<p>Des questions sur la route&nbsp;? Passe par le chat en direct dans l'app. Pour les r&egrave;gles cyclistes, va voir <a href="https://www.codedelaroute.be/fr" target="_blank" rel="noopener"><strong>codedelaroute.be</strong></a>. En cas d'urgence, appelle le <strong>112</strong>.</p>
                 <div class="navigation">
                     <button class="nav-button" onclick="changePage(-1)">&larr; Pr&eacute;c&eacute;dent</button>
                     <button class="nav-button" onclick="changePage(1)">Suivant &rarr;</button>
@@ -2584,9 +2620,16 @@ tr:nth-child(even) td { background: #fafafa; }
         <div class="page" id="page-fr-all-1" data-lang="fr" data-vehicle="all">
             <div class="card">
                 <div class="section-badge shared">&#10003;</div>
-                <div class="section-title">Les dangers &agrave; la livraison</div>
+                <div class="section-title">Les dangers &agrave; la livraison et le "Take 5"</div>
                 <h2>Prends cinq secondes pour regarder</h2>
-<p>Quand tu arrives &agrave; une adresse, arr&ecirc;te-toi une seconde et regarde autour de toi. Le chemin est-il d&eacute;gag&eacute;&nbsp;? Y a-t-il un danger &eacute;vident&nbsp;? Ce petit "Take 5" mental rep&egrave;re les probl&egrave;mes avant qu'ils n'arrivent.</p>
+<p>Quand tu arrives &agrave; une adresse, arr&ecirc;te-toi une seconde et regarde autour de toi. Le chemin est-il d&eacute;gag&eacute;&nbsp;? Y a-t-il un danger &eacute;vident&nbsp;? Avant de te lancer dans quelque chose de nouveau, ou quand les conditions changent, passe ces cinq questions&nbsp;:</p>
+<ol>
+<li><strong>Qu'est-ce qui peut mal tourner ici&nbsp;?</strong> (surfaces glissantes, entr&eacute;es mal &eacute;clair&eacute;es, animaux agressifs, colis lourds, m&eacute;t&eacute;o, trafic)</li>
+<li><strong>Quels risques &ccedil;a repr&eacute;sente&nbsp;?</strong> (chutes, blessures, exposition au froid ou &agrave; la chaleur, vol, retard, conflit)</li>
+<li><strong>Qu'est-ce que je peux faire pour limiter &ccedil;a&nbsp;?</strong> (chaussures antid&eacute;rapantes, lampe, itin&eacute;raire pr&eacute;par&eacute;, diable, m&eacute;t&eacute;o v&eacute;rifi&eacute;e, vitesse r&eacute;duite)</li>
+<li><strong>Est-ce que j'ai le mat&eacute;riel et les comp&eacute;tences&nbsp;?</strong> (bon &eacute;quipement, feux qui marchent, connaissance du quartier, capacit&eacute; &agrave; porter)</li>
+<li><strong>Est-ce que je suis s&ucirc;r de pouvoir le faire en s&eacute;curit&eacute;&nbsp;?</strong> (Si non&nbsp;: demande un conseil ou de l'aide.)</li>
+</ol>
 <h2>Glissades, tr&eacute;buchements et chutes</h2>
 <ul>
 <li><strong>&Ccedil;a glisse&nbsp;:</strong> pav&eacute;s mouill&eacute;s, dalles couvertes de mousse, all&eacute;es grasses &mdash; ralentis et teste o&ugrave; tu poses le pied</li>
@@ -2614,6 +2657,13 @@ tr:nth-child(even) td { background: #fafafa; }
 </ol>
 <p>En cas d'agression physique, appelle la police au <strong>101</strong> (ou le <strong>112</strong> en cas d'urgence). D&eacute;pose plainte au commissariat le plus proche. Tu as le droit de te sentir en s&eacute;curit&eacute; au travail.</p>
 </div>
+<h2>Immeubles, clients et colis</h2>
+<ul>
+<li><strong>Acc&egrave;s aux immeubles&nbsp;:</strong> attention aux parlophones, digicodes et entr&eacute;es s&eacute;curis&eacute;es</li>
+<li><strong>Contact avec les clients&nbsp;:</strong> reste professionnel et tiens compte des barri&egrave;res de langue</li>
+<li><strong>Colis&nbsp;:</strong> v&eacute;rifie le poids et la taille avant de soulever, et porte correctement</li>
+<li><strong>Ta propre s&eacute;curit&eacute;&nbsp;:</strong> reste attentif &agrave; ton environnement, surtout la nuit ou dans un quartier que tu ne connais pas</li>
+</ul>
 <h2>Garde ton contact d'urgence sur toi</h2>
 <p>&Eacute;cris ton contact d'urgence sur une carte dans ton portefeuille ou ton sac, pas seulement dans ton GSM. Les ambulanciers et la police n'arriveront peut-&ecirc;tre pas &agrave; le d&eacute;verrouiller.</p>
 <h2>Besoin d'aide&nbsp;?</h2>
@@ -2625,33 +2675,6 @@ tr:nth-child(even) td { background: #fafafa; }
             </div>
         </div>
         <div class="page" id="page-fr-all-2" data-lang="fr" data-vehicle="all">
-            <div class="card">
-                <div class="section-badge shared">&#10003;</div>
-                <div class="section-title">&Eacute;valuer les risques avec le "Take 5"</div>
-                <p>Comme coursier, ton lieu de travail ne s'arr&ecirc;te pas &agrave; la route. Avant de te lancer dans quelque chose de nouveau ou quand les conditions changent, fais une &eacute;valuation rapide.</p>
-<h2>Cinq questions</h2>
-<ol>
-<li><strong>Qu'est-ce qui peut mal tourner ici&nbsp;?</strong> (surfaces glissantes, entr&eacute;es mal &eacute;clair&eacute;es, animaux agressifs, colis lourds, m&eacute;t&eacute;o, trafic)</li>
-<li><strong>Quels risques &ccedil;a repr&eacute;sente&nbsp;?</strong> (chutes, blessures, exposition au froid ou &agrave; la chaleur, vol, retard, conflit)</li>
-<li><strong>Qu'est-ce que je peux faire pour limiter &ccedil;a&nbsp;?</strong> (chaussures antid&eacute;rapantes, lampe, itin&eacute;raire pr&eacute;par&eacute;, diable, m&eacute;t&eacute;o v&eacute;rifi&eacute;e, vitesse r&eacute;duite)</li>
-<li><strong>Est-ce que j'ai le mat&eacute;riel et les comp&eacute;tences&nbsp;?</strong> (bon &eacute;quipement, feux qui marchent, connaissance du quartier, capacit&eacute; &agrave; porter)</li>
-<li><strong>Est-ce que je suis s&ucirc;r de pouvoir le faire en s&eacute;curit&eacute;&nbsp;?</strong> (Si non&nbsp;: demande un conseil ou de l'aide.)</li>
-</ol>
-<h2>&Agrave; garder en t&ecirc;te</h2>
-<ul>
-<li><strong>Acc&egrave;s aux immeubles&nbsp;:</strong> parlophones, digicodes et entr&eacute;es s&eacute;curis&eacute;es</li>
-<li><strong>Contact avec les clients&nbsp;:</strong> reste professionnel et tiens compte des barri&egrave;res de langue</li>
-<li><strong>M&eacute;t&eacute;o&nbsp;:</strong> pr&eacute;pare-toi &agrave; ce que &ccedil;a change</li>
-<li><strong>Ta propre s&eacute;curit&eacute;&nbsp;:</strong> reste attentif &agrave; ton environnement, surtout la nuit ou dans un quartier que tu ne connais pas</li>
-<li><strong>Manipulation des colis&nbsp;:</strong> tiens compte du poids et de la taille, et porte correctement</li>
-</ul>
-                <div class="navigation">
-                    <button class="nav-button" onclick="changePage(-1)">&larr; Pr&eacute;c&eacute;dent</button>
-                    <button class="nav-button" onclick="changePage(1)">Suivant &rarr;</button>
-                </div>
-            </div>
-        </div>
-        <div class="page" id="page-fr-all-3" data-lang="fr" data-vehicle="all">
             <div class="card">
                 <div class="section-badge shared">&#10003;</div>
                 <div class="section-title">Porter sans t'ab&icirc;mer le dos</div>
@@ -2681,7 +2704,7 @@ tr:nth-child(even) td { background: #fafafa; }
                 </div>
             </div>
         </div>
-        <div class="page" id="page-fr-all-4" data-lang="fr" data-vehicle="all">
+        <div class="page" id="page-fr-all-3" data-lang="fr" data-vehicle="all">
             <div class="card">
                 <div class="section-badge shared">&#10003;</div>
                 <div class="section-title">Livrer par forte chaleur</div>
@@ -2725,39 +2748,152 @@ tr:nth-child(even) td { background: #fafafa; }
         <div class="completion-message" id="completionMessage">
             <div class="completion-card">
                 <h2 id="completionTitle">&#10003; Pack Complete!</h2>
-                <p style="font-size: 16px; color: #666; margin-bottom: 20px;" id="completionText">You've reviewed all the safety information for your vehicle type. Stay safe out on the road!</p>
-                <p style="font-size: 14px; color: #999; margin-bottom: 25px;" id="completionEmergency">In an emergency, always call <strong>112</strong>.</p>
-                <button class="nav-button" onclick="resetPack()"><span id="reviewText">Review Again</span></button>
+                <p style="font-size: 16px; color: #5f5f5f; margin-bottom: 20px;" id="completionText"></p>
+                <p style="font-size: 14px; color: #6b6b6b; margin-bottom: 20px;" id="completionEmergency"></p>
+
+                <button class="nav-button" onclick="resetPack()" id="reviewBtn"></button>
             </div>
         </div>
     </div>
 
+    <div class="panel-scrim" id="panelScrim" onclick="closePanel()"></div>
+    <aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="panelTitle">
+        <div class="panel-head">
+            <h3 id="panelTitle">Contents</h3>
+            <button class="panel-close" onclick="closePanel()" aria-label="Close">&times;</button>
+        </div>
+        <div class="panel-body" id="panelBody"></div>
+    </aside>
+
     <script>
         /* -----------------------------------------------------------------
            LANGUAGES
-           To add a language: add an entry here, add its UI strings to UI
-           below, and add the matching page divs with data-lang="<code>".
-           `dir: "rtl"` is honoured automatically for Arabic, Urdu, etc.
+           To add one: add an entry here, add its strings to UI, and add the
+           page divs with data-lang="<code>". dir:"rtl" is applied for you.
         ----------------------------------------------------------------- */
         const LANGS = [
-          { code: 'en', native: 'English',    english: 'English', dir: 'ltr' },
-          { code: 'nl', native: 'Nederlands', english: 'Dutch',   dir: 'ltr' },
+          { code: 'en', native: 'English',        english: 'English', dir: 'ltr' },
+          { code: 'nl', native: 'Nederlands',     english: 'Dutch',   dir: 'ltr' },
           { code: 'fr', native: 'Fran\u00e7ais',  english: 'French',  dir: 'ltr' }
         ];
 
         const UI = {
-          en: { page:'Page {n} of {total}', complete:'Complete Pack \u2713', done:'Complete!', title:'\u2713 Pack Complete!', text:"You've reviewed all the safety information for your vehicle type. Stay safe out on the road!", emergency:'In an emergency, always call <strong>112</strong>.', review:'Review Again', prev:'\u2190 Previous', next:'Next \u2192', gate:'Choose your language', gateSub:'You can change this at any time.', suggested:'SUGGESTED' },
-          nl: { page:'Pagina {n} van {total}', complete:'Pakket afronden \u2713', done:'Klaar!', title:'\u2713 Pakket afgerond!', text:'Je hebt alle veiligheidsinfo voor je voertuig doorgenomen. Rij veilig!', emergency:'Bel bij nood altijd <strong>112</strong>.', review:'Opnieuw bekijken', prev:'\u2190 Vorige', next:'Volgende \u2192', gate:'Kies je taal', gateSub:'Je kan dit later altijd aanpassen.', suggested:'AANGERADEN' },
-          fr: { page:'Page {n} sur {total}', complete:'Terminer le pack \u2713', done:'Termin\u00e9\u00a0!', title:'\u2713 Pack termin\u00e9\u00a0!', text:'Tu as parcouru toutes les infos s\u00e9curit\u00e9 pour ton v\u00e9hicule. Roule prudemment\u00a0!', emergency:'En cas d\u2019urgence, appelle toujours le <strong>112</strong>.', review:'Revoir', prev:'\u2190 Pr\u00e9c\u00e9dent', next:'Suivant \u2192', gate:'Choisis ta langue', gateSub:'Tu peux changer \u00e0 tout moment.', suggested:'SUGG\u00c9R\u00c9' }
+          en: {
+            page:'Page {n} of {total}', chooseVehicle:'Choose your vehicle to begin',
+            complete:'Finish \u2713', done:'Complete!',
+            title:'\u2713 Pack Complete!',
+            text:"You've reviewed all the safety information for your vehicle type. Stay safe out on the road!",
+            emergency:'In an emergency, always call <strong>112</strong>.',
+            review:'Review again', prev:'\u2190 Previous', next:'Next \u2192',
+            gate:'Choose your language', gateSub:'You can change this at any time.', suggested:'SUGGESTED',
+            menu:'Contents', panelTitle:'Contents', sections:'Sections', settings:'Settings',
+            changeVehicle:'Change vehicle', restart:'Start over', textSize:'Text size',
+            collapseAll:'Collapse all sections', expandAll:'Expand all sections', vehCar:'Car', vehMoto:'Motorcycle / Moped', vehBike:'E-Bike'
+          },
+          nl: {
+            page:'Pagina {n} van {total}', chooseVehicle:'Kies je voertuig om te beginnen',
+            complete:'Afronden \u2713', done:'Klaar!',
+            title:'\u2713 Pakket afgerond!',
+            text:'Je hebt alle veiligheidsinfo voor je voertuig doorgenomen. Rij veilig!',
+            emergency:'Bel bij nood altijd <strong>112</strong>.',
+            review:'Opnieuw bekijken', prev:'\u2190 Vorige', next:'Volgende \u2192',
+            gate:'Kies je taal', gateSub:'Je kan dit later altijd aanpassen.', suggested:'AANGERADEN',
+            menu:'Inhoud', panelTitle:'Inhoud', sections:'Onderdelen', settings:'Instellingen',
+            changeVehicle:'Ander voertuig kiezen', restart:'Opnieuw beginnen', textSize:'Tekstgrootte',
+            collapseAll:'Alles dichtklappen', expandAll:'Alles openklappen', vehCar:'Auto', vehMoto:'Moto of bromfiets', vehBike:'E-bike'
+          },
+          fr: {
+            page:'Page {n} sur {total}', chooseVehicle:'Choisis ton v\u00e9hicule pour commencer',
+            complete:'Terminer \u2713', done:'Termin\u00e9\u00a0!',
+            title:'\u2713 Pack termin\u00e9\u00a0!',
+            text:'Tu as parcouru toutes les infos s\u00e9curit\u00e9 pour ton v\u00e9hicule. Roule prudemment\u00a0!',
+            emergency:'En cas d\u2019urgence, appelle toujours le <strong>112</strong>.',
+            review:'Revoir', prev:'\u2190 Pr\u00e9c\u00e9dent', next:'Suivant \u2192',
+            gate:'Choisis ta langue', gateSub:'Tu peux changer \u00e0 tout moment.', suggested:'SUGG\u00c9R\u00c9',
+            menu:'Sommaire', panelTitle:'Sommaire', sections:'Sections', settings:'R\u00e9glages',
+            changeVehicle:'Changer de v\u00e9hicule', restart:'Recommencer', textSize:'Taille du texte',
+            collapseAll:'Tout replier', expandAll:'Tout d\u00e9plier', vehCar:'Voiture', vehMoto:'Moto ou cyclo', vehBike:'V\u00e9lo \u00e9lectrique'
+          }
         };
 
-        let currentPage = 0, selectedLang = 'en', selectedVehicle = null;
+        let currentPage = 0, selectedLang = 'en', selectedVehicle = null, textSize = 'm';
         let visiblePageIds = ['page-en-title', 'page-en-selector'];
 
-        /* localStorage is wrapped: some embedded/sandboxed contexts block it. */
+        /* localStorage is wrapped: some embedded contexts block it outright. */
         function remember(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
         function recall(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+        function forget(k) { try { localStorage.removeItem(k); } catch (e) {} }
 
+        function vehicleLabel(v) {
+          const u = UI[selectedLang];
+          return v === 'car' ? u.vehCar : v === 'motorcycle' ? u.vehMoto : v === 'bike' ? u.vehBike : '';
+        }
+
+        /* ============================================ accordion sections */
+        function buildAccordions() {
+          document.querySelectorAll('.page .card').forEach(function (card) {
+            const heads = card.querySelectorAll('h2');
+            if (!heads.length) return;
+            heads.forEach(function (h2) {
+              const body = document.createElement('div');
+              body.className = 'acc-body';
+              let node = h2.nextSibling;
+              while (node) {
+                const next = node.nextSibling;
+                if (node.nodeType === 1 && (node.tagName === 'H2' || node.classList.contains('navigation'))) break;
+                body.appendChild(node);
+                node = next;
+              }
+              h2.parentNode.insertBefore(body, h2.nextSibling);
+              h2.classList.add('acc');
+              h2.setAttribute('role', 'button');
+              h2.setAttribute('tabindex', '0');
+              h2.setAttribute('aria-expanded', 'true');
+              const caret = document.createElement('span');
+              caret.className = 'acc-caret';
+              caret.setAttribute('aria-hidden', 'true');
+              caret.innerHTML = '&#9660;';
+              h2.appendChild(caret);
+              function toggle() {
+                const collapsed = h2.classList.toggle('collapsed');
+                body.classList.toggle('collapsed', collapsed);
+                h2.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+              }
+              h2.addEventListener('click', toggle);
+              h2.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+              });
+            });
+            /* collapse/expand-all control, content pages only */
+            const st = card.querySelector('.section-title');
+            if (!st) return;
+            const bar = document.createElement('div');
+            bar.className = 'acc-toolbar';
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.addEventListener('click', function () {
+              const anyOpen = card.querySelector('h2.acc:not(.collapsed)');
+              card.querySelectorAll('h2.acc').forEach(function (h) {
+                const b = h.nextElementSibling;
+                h.classList.toggle('collapsed', !!anyOpen);
+                if (b) b.classList.toggle('collapsed', !!anyOpen);
+                h.setAttribute('aria-expanded', anyOpen ? 'false' : 'true');
+              });
+              labelToolbar(card);
+            });
+            bar.appendChild(btn);
+            st.parentNode.insertBefore(bar, st.nextSibling);
+          });
+        }
+
+        function labelToolbar(card) {
+          const btn = card.querySelector('.acc-toolbar button');
+          if (!btn) return;
+          const anyOpen = card.querySelector('h2.acc:not(.collapsed)');
+          btn.textContent = anyOpen ? UI[selectedLang].collapseAll : UI[selectedLang].expandAll;
+        }
+
+        /* ================================================ language gate */
         function detectLang() {
           const saved = recall('safetyPackLang');
           if (saved && UI[saved]) return saved;
@@ -2769,23 +2905,21 @@ tr:nth-child(even) td { background: #fafafa; }
           return null;
         }
 
-        /* ------------------------------------------------- language gate */
         function buildGate() {
           const suggested = detectLang();
           const ui = UI[suggested || 'en'];
-          const gate = document.getElementById('langGate');
-          let html = '<div class="lang-gate-inner"><span class="globe">&#127760;</span>' +
+          let html = '<div class="lang-gate-inner"><span class="globe" aria-hidden="true">&#127760;</span>' +
                      '<h2>' + ui.gate + '</h2><p class="sub">' + ui.gateSub + '</p>';
           LANGS.forEach(function (l) {
-            const isSuggested = (l.code === suggested);
-            html += '<button class="lang-card' + (isSuggested ? ' suggested' : '') + '" onclick="pickLanguage(\'' + l.code + '\')">' +
+            const s = (l.code === suggested);
+            html += '<button class="lang-card' + (s ? ' suggested' : '') + '" onclick="pickLanguage(\'' + l.code + '\')">' +
                     '<span class="lang-code">' + l.code.toUpperCase() + '</span>' +
                     '<span><span class="native">' + l.native +
-                    (isSuggested ? '<span class="badge">' + ui.suggested + '</span>' : '') +
+                    (s ? '<span class="badge">' + ui.suggested + '</span>' : '') +
                     '</span><span class="english">' + l.english + '</span></span>' +
-                    '<span class="arrow">&rarr;</span></button>';
+                    '<span class="arrow" aria-hidden="true">&rarr;</span></button>';
           });
-          gate.innerHTML = html + '</div>';
+          document.getElementById('langGate').innerHTML = html + '</div>';
         }
 
         function pickLanguage(lang) {
@@ -2794,17 +2928,18 @@ tr:nth-child(even) td { background: #fafafa; }
           applyLanguage(lang);
         }
 
-        /* --------------------------------------------- header switcher */
+        /* ============================================== header switcher */
         function buildLangMenu() {
-          const menu = document.getElementById('langMenu');
-          menu.innerHTML = LANGS.map(function (l) {
+          document.getElementById('langMenu').innerHTML = LANGS.map(function (l) {
             return '<button role="menuitem" class="' + (l.code === selectedLang ? 'active' : '') +
                    '" onclick="switchLanguage(\'' + l.code + '\')">' +
                    '<span class="lang-code">' + l.code.toUpperCase() + '</span>' + l.native +
-                   (l.code === selectedLang ? '<span class="tick">&#10003;</span>' : '') + '</button>';
+                   (l.code === selectedLang ? '<span class="tick" aria-hidden="true">&#10003;</span>' : '') + '</button>';
           }).join('');
           const cur = LANGS.filter(function (l) { return l.code === selectedLang; })[0];
           document.getElementById('langCurrentLabel').textContent = cur ? cur.native : selectedLang;
+          document.getElementById('menuBtnLabel').textContent = UI[selectedLang].menu;
+          document.getElementById('panelTitle').textContent = UI[selectedLang].panelTitle;
         }
 
         function toggleLangMenu(e) {
@@ -2813,7 +2948,6 @@ tr:nth-child(even) td { background: #fafafa; }
           const open = sw.classList.toggle('open');
           document.getElementById('langCurrent').setAttribute('aria-expanded', open ? 'true' : 'false');
         }
-
         document.addEventListener('click', function () {
           const sw = document.getElementById('langSwitcher');
           if (sw && sw.classList.contains('open')) {
@@ -2822,11 +2956,15 @@ tr:nth-child(even) td { background: #fafafa; }
           }
         });
 
-        function applyLanguage(lang) {
-          selectedLang = lang;
+        function setLangAttrs(lang) {
           const meta = LANGS.filter(function (l) { return l.code === lang; })[0];
           document.documentElement.setAttribute('lang', lang);
           document.documentElement.setAttribute('dir', (meta && meta.dir) || 'ltr');
+        }
+
+        function applyLanguage(lang) {
+          selectedLang = lang;
+          setLangAttrs(lang);
           visiblePageIds = getVisiblePageIds();
           if (currentPage >= visiblePageIds.length) currentPage = visiblePageIds.length - 1;
           buildLangMenu();
@@ -2834,41 +2972,55 @@ tr:nth-child(even) td { background: #fafafa; }
         }
 
         function switchLanguage(lang) {
-          if (lang === selectedLang) { return; }
+          if (lang === selectedLang) return;
           const currentId = visiblePageIds[currentPage];
           const newId = currentId.replace('page-' + selectedLang + '-', 'page-' + lang + '-');
           remember('safetyPackLang', lang);
           selectedLang = lang;
-          const meta = LANGS.filter(function (l) { return l.code === lang; })[0];
-          document.documentElement.setAttribute('lang', lang);
-          document.documentElement.setAttribute('dir', (meta && meta.dir) || 'ltr');
+          setLangAttrs(lang);
           visiblePageIds = getVisiblePageIds();
           const idx = visiblePageIds.indexOf(newId);
           currentPage = idx >= 0 ? idx : Math.min(currentPage, visiblePageIds.length - 1);
           buildLangMenu();
-          /* If the finish screen is up, re-render it in the new language. */
-          if (document.getElementById('completionMessage').style.display === 'flex') {
-            showCompletion();
-          } else {
-            showPage();
-          }
+          if (document.getElementById('completionMessage').style.display === 'flex') showCompletion();
+          else showPage();
+          if (document.getElementById('panel').classList.contains('open')) buildPanel();
         }
 
-        /* ------------------------------------------------------ paging */
+        /* ======================================================= paging */
         function getVisiblePageIds() {
           let pages = ['page-' + selectedLang + '-title', 'page-' + selectedLang + '-selector'];
           if (selectedVehicle) {
-            document.querySelectorAll('.page[data-lang="' + selectedLang + '"][data-vehicle="' + selectedVehicle + '"]').forEach(function (p) { pages.push(p.id); });
-            document.querySelectorAll('.page[data-lang="' + selectedLang + '"][data-vehicle="all"]').forEach(function (p) { if (pages.indexOf(p.id) === -1) pages.push(p.id); });
+            document.querySelectorAll('.page[data-lang="' + selectedLang + '"][data-vehicle="' + selectedVehicle + '"]')
+              .forEach(function (p) { pages.push(p.id); });
+            document.querySelectorAll('.page[data-lang="' + selectedLang + '"][data-vehicle="all"]')
+              .forEach(function (p) { if (pages.indexOf(p.id) === -1) pages.push(p.id); });
           }
           return pages;
         }
 
+        /* Progress counts CONTENT pages only. The title and vehicle
+           selector aren't part of the pack, so they no longer show a
+           misleading "1 of 2" at 50%. */
         function updateProgress() {
-          const total = visiblePageIds.length, n = currentPage + 1;
           const u = UI[selectedLang];
-          document.getElementById('progressFill').style.width = Math.min(100, (n / total) * 100) + '%';
-          document.getElementById('progressText').textContent = u.page.replace('{n}', n).replace('{total}', total);
+          const fill = document.getElementById('progressFill');
+          const text = document.getElementById('progressText');
+          if (!selectedVehicle || currentPage < 2) {
+            fill.style.width = '0%';
+            text.textContent = u.chooseVehicle;
+            return;
+          }
+          const total = visiblePageIds.length - 2, n = currentPage - 1;
+          fill.style.width = Math.min(100, (n / total) * 100) + '%';
+          text.textContent = u.page.replace('{n}', n).replace('{total}', total);
+        }
+
+        function saveProgress() {
+          if (!selectedVehicle) { forget('safetyPackWhere'); return; }
+          remember('safetyPackWhere', JSON.stringify({
+            lang: selectedLang, vehicle: selectedVehicle, page: currentPage
+          }));
         }
 
         function showPage() {
@@ -2879,8 +3031,11 @@ tr:nth-child(even) td { background: #fafafa; }
             page.style.animation = 'none';
             page.offsetHeight;
             page.style.animation = '';
+            const card = page.querySelector('.card');
+            if (card) labelToolbar(card);
           }
           updateProgress();
+          saveProgress();
           const u = UI[selectedLang];
           if (page) page.querySelectorAll('.navigation').forEach(function (nav) {
             const b = nav.querySelectorAll('button');
@@ -2904,6 +3059,15 @@ tr:nth-child(even) td { background: #fafafa; }
           if (n >= 0 && n < visiblePageIds.length) { currentPage = n; showPage(); }
         }
 
+        function goToPage(index) {
+          if (index >= 0 && index < visiblePageIds.length) {
+            document.getElementById('completionMessage').style.display = 'none';
+            currentPage = index;
+            showPage();
+          }
+          closePanel();
+        }
+
         function selectVehicle(vehicle) {
           selectedVehicle = vehicle;
           visiblePageIds = getVisiblePageIds();
@@ -2911,6 +3075,80 @@ tr:nth-child(even) td { background: #fafafa; }
           showPage();
         }
 
+        function changeVehicle() {
+          selectedVehicle = null;
+          visiblePageIds = getVisiblePageIds();
+          currentPage = 1;
+          document.getElementById('completionMessage').style.display = 'none';
+          closePanel();
+          showPage();
+        }
+
+        /* ============================================ contents + settings */
+        function buildPanel() {
+          const u = UI[selectedLang];
+          let html = '';
+          if (selectedVehicle) {
+            html += '<div class="panel-section-label">' + u.sections + '</div>';
+            visiblePageIds.forEach(function (id, i) {
+              if (i < 2) return;
+              const el = document.getElementById(id);
+              if (!el) return;
+              const t = el.querySelector('.section-title');
+              const badge = el.querySelector('.section-badge');
+              const shared = badge && badge.classList.contains('shared');
+              const label = t ? t.textContent.trim() : id;
+              html += '<button class="toc-item' + (i === currentPage ? ' current' : '') +
+                      '" onclick="goToPage(' + i + ')">' +
+                      '<span class="toc-num' + (shared ? ' shared' : '') + '">' +
+                      (shared ? '\u2713' : (i - 1)) + '</span><span>' + label + '</span></button>';
+            });
+          }
+          html += '<div class="panel-section-label">' + u.settings + '</div>';
+          if (selectedVehicle) {
+            html += '<button class="panel-action" onclick="changeVehicle()">' +
+                    '<span aria-hidden="true">&#128663;</span>' + u.changeVehicle + '</button>';
+          }
+          html += '<button class="panel-action" onclick="restartPack()">' +
+                  '<span aria-hidden="true">&#8635;</span>' + u.restart + '</button>';
+          html += '<div class="panel-section-label">' + u.textSize + '</div><div class="textsize-row">' +
+                  ['m', 'l', 'xl'].map(function (s, i) {
+                    return '<button class="' + (textSize === s ? 'active' : '') +
+                           '" onclick="setTextSize(\'' + s + '\')" style="font-size:' +
+                           [14, 17, 20][i] + 'px">A</button>';
+                  }).join('') + '</div>';
+          document.getElementById('panelBody').innerHTML = html;
+        }
+
+        function openPanel() {
+          buildPanel();
+          document.getElementById('panel').classList.add('open');
+          document.getElementById('panelScrim').classList.add('open');
+        }
+        function closePanel() {
+          document.getElementById('panel').classList.remove('open');
+          document.getElementById('panelScrim').classList.remove('open');
+        }
+
+        function setTextSize(size) {
+          textSize = size;
+          document.body.classList.remove('text-l', 'text-xl');
+          if (size !== 'm') document.body.classList.add('text-' + size);
+          remember('safetyPackText', size);
+          buildPanel();
+        }
+
+        function restartPack() {
+          forget('safetyPackWhere');
+          selectedVehicle = null;
+          currentPage = 0;
+          visiblePageIds = getVisiblePageIds();
+          document.getElementById('completionMessage').style.display = 'none';
+          closePanel();
+          showPage();
+        }
+
+        /* =================================================== completion */
         function showCompletion() {
           const u = UI[selectedLang];
           document.querySelectorAll('.page').forEach(function (p) { p.classList.remove('active'); });
@@ -2918,7 +3156,7 @@ tr:nth-child(even) td { background: #fafafa; }
           document.getElementById('completionTitle').textContent = u.title;
           document.getElementById('completionText').textContent = u.text;
           document.getElementById('completionEmergency').innerHTML = u.emergency;
-          document.getElementById('reviewText').textContent = u.review;
+          document.getElementById('reviewBtn').textContent = u.review;
           document.getElementById('progressFill').style.width = '100%';
           document.getElementById('progressText').textContent = u.done;
         }
@@ -2928,23 +3166,67 @@ tr:nth-child(even) td { background: #fafafa; }
           selectedVehicle = null;
           visiblePageIds = getVisiblePageIds();
           document.getElementById('completionMessage').style.display = 'none';
+          forget('safetyPackWhere');
           showPage();
         }
 
+        /* ================================================ input handling */
         document.addEventListener('keydown', function (e) {
           if (!document.getElementById('langGate').classList.contains('hidden')) return;
+          if (e.key === 'Escape') { closePanel(); return; }
+          if (document.getElementById('panel').classList.contains('open')) return;
           if (document.getElementById('completionMessage').style.display === 'flex') return;
+          const t = e.target.tagName;
+          if (t === 'INPUT' || t === 'TEXTAREA') return;
           if (e.key === 'ArrowRight') changePage(1);
           else if (e.key === 'ArrowLeft') changePage(-1);
         });
 
-        /* ------------------------------------------------------- start */
+        /* Swipe: arrow keys are no use on the device this is actually read on. */
+        (function () {
+          let x0 = null, y0 = null;
+          const el = document.querySelector('.container');
+          el.addEventListener('touchstart', function (e) {
+            if (e.touches.length !== 1) return;
+            x0 = e.touches[0].clientX; y0 = e.touches[0].clientY;
+          }, { passive: true });
+          el.addEventListener('touchend', function (e) {
+            if (x0 === null) return;
+            const dx = e.changedTouches[0].clientX - x0;
+            const dy = e.changedTouches[0].clientY - y0;
+            x0 = null;
+            if (Math.abs(dx) < 60 || Math.abs(dy) > 45) return;
+            if (document.getElementById('completionMessage').style.display === 'flex') return;
+            if (document.getElementById('panel').classList.contains('open')) return;
+            const rtl = document.documentElement.getAttribute('dir') === 'rtl';
+            changePage((dx < 0) !== rtl ? 1 : -1);
+          }, { passive: true });
+        })();
+
+        /* ========================================================= start */
+        buildAccordions();
         buildGate();
         buildLangMenu();
-        const saved = recall('safetyPackLang');
-        if (saved && UI[saved]) {
+
+        const savedText = recall('safetyPackText');
+        if (savedText) setTextSize(savedText);
+
+        let where = null;
+        try { where = JSON.parse(recall('safetyPackWhere')); } catch (e) {}
+        const savedLang = recall('safetyPackLang');
+
+        if (where && UI[where.lang] && where.vehicle) {
           document.getElementById('langGate').classList.add('hidden');
-          applyLanguage(saved);
+          selectedLang = where.lang;
+          selectedVehicle = where.vehicle;
+          setLangAttrs(selectedLang);
+          visiblePageIds = getVisiblePageIds();
+          currentPage = Math.min(Math.max(where.page, 0), visiblePageIds.length - 1);
+          buildLangMenu();
+          showPage();
+        } else if (savedLang && UI[savedLang]) {
+          document.getElementById('langGate').classList.add('hidden');
+          applyLanguage(savedLang);
         } else {
           updateProgress();
         }
